@@ -1,4 +1,6 @@
 @import '~styles/helpers/_module';
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
 
 $space-between: 10px;
 
@@ -24,6 +26,8 @@ $space-between: 10px;
 				a {
 					@include button($background-color: #B15533, $border-radius: 2px);
 					@include small-font-size;
+					font-family: 'Poppins';			
+						 
 					height: 42px;
 					line-height: 42px;
 					padding: 0 $space-between;
