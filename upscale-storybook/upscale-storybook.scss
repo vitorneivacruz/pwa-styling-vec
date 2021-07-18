@@ -6,6 +6,7 @@
 	box-sizing: border-box;
 	max-width: none !important;
 	$dark-font-color: #000000;
+	font-family: 'Poppins';
 
 	.title {
 		@include extra-large-font-size;
@@ -992,7 +993,7 @@
 		z-index: 2;
 		&:before {
 			color: #000000;
-			font-family: 'Material Icons';
+			font-family: 'Poppins';
 			font-size: $icon-size;
 		}
 	}
@@ -1051,7 +1052,7 @@
 .upscale-medium {
 	:host {
 		.storybook-background {
-			padding: 24px 0;
+			padding: 0px 0;
 		}
 	}
 }
@@ -1060,7 +1061,7 @@
 .upscale-extra-large {
 	:host {
 		.storybook-background {
-			padding: 48px 0;
+			padding: 0px 0;
 		}
 	}
 }
