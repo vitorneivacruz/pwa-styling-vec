@@ -1,0 +1,256 @@
+@import '~styles/helpers/_module';
+@import '~app/shared/formgroup-input-container/formgroup-input-container-mixins';
+@import '../account/account-styles';
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+:host.hide {
+	display: none;
+}
+
+:host {
+	.formgroup-inputs {
+		@include account-view;
+
+		&__consent,
+		&__registration {
+			display: block;
+			margin: auto;
+			box-sizing: border-box;
+			border: solid 1px #efefef;
+			background-color: #ffffff;
+		}
+		&__consent {
+			margin-top: $small-spacer-mobile;
+		}
+	}
+}
+
+.login {
+	padding: $medium-spacer-tablet 0;
+	display: flex;
+	.login-content {
+		font-family: "Poppins";
+		width: 100%;
+		.header {
+			@include medium-font-size;
+			padding-bottom: $small-spacer-tablet;
+		}
+		.title {
+			@include large-font-size;
+			color: $black;
+			padding-bottom: 24px;
+			padding-top: 110px;
+			margin-left: 100px;
+		}
+		.description {
+			padding-bottom: 24px;
+			margin-left: 100px;
+		}
+		.buttons {
+			display: flex;
+			flex-direction: row;
+			margin-left: 100px;
+
+			.login-button {
+				@include button;
+				min-width: 250px;
+				height: 40px;
+				border-radius: 2px;
+				border-radius: 2px;
+				border: solid 2px $black;
+				color: $black;
+				background-color: $white;
+				display: inline-flex;
+				text-decoration: none;
+				justify-content: center;
+				align-items: center;
+				@include small-font-size;
+				font-weight: 500;
+				&:hover {
+					background-color: darken(white, 10%);
+				}
+			}
+			.register-button {
+				@include button;
+				margin-left: $small-spacer-tablet;
+				min-width: 250px;
+				height: 40px;
+				color: #000000;
+				border-radius: 2px;
+				border: solid 2px $black;
+				background-color: $white;
+				@include small-font-size;
+				font-weight: 500;
+				&:hover {
+					background-color: darken(white, 10%);
+				}
+			}
+		}
+	}
+}
+
+.register-content {
+	width: 100%;
+	.title {
+		@include large-font-size;
+		color: $black;
+		padding-bottom: 24px;
+		padding-top: 110px;
+	}
+	.description {
+		padding-bottom: 24px;
+	}
+	.register-buttons {
+		display: flex;
+		justify-content: space-between;
+		margin-top: $small-spacer-tablet;
+		align-items: center;
+		.login-labels {
+			color: #000000;
+			text-decoration: none;
+			font-weight: 300;
+			line-height: 40px;
+			.login {
+				font-weight: 500;
+			}
+		}
+		.register-button {
+			@include button;
+			width: 100%;
+			min-width: 250px;
+			height: 40px;
+			color: #ffffff;
+			border-radius: 2px;
+			background-color: #000000;
+			@include small-font-size;
+			font-weight: 500;
+			&:disabled {
+				background-color: #dadada;
+				color: $upscale-grey4;
+			}
+		}
+	}
+}
+
+.input-container {
+	@include input-container;
+	border-top: solid 1px #efefef;
+}
+.last {
+	border-bottom: solid 1px #efefef;
+}
+
+.input {
+	@include input;
+}
+
+a {
+	color: $anchor-text-color;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.consent-section {
+	padding: 15px;
+	margin-top: 1px;
+	background: white;
+
+	upscale-explicit-consent + upscale-explicit-consent {
+		margin-top: 7px;
+	}
+}
+
+.vertical-line {
+	border-left: 1px solid $upscale-grey6;
+	padding: 0px 45px;
+}
+
+.upscale-extra-small,
+.upscale-small {
+	:host {
+		.login {
+			padding: $medium-spacer-mobile 0;
+			display: inherit;
+			.login-content {
+				.title {
+					padding-top: 0px;
+					margin-left: 0px;
+				}
+				.description {
+					margin-left: 0px;
+				}
+				.buttons {
+					flex-direction: column;
+					padding-right: 10px;
+					margin-left: 0px;
+					.login-button {
+						min-width: fit-content;
+					}
+					.register-button {
+						margin-left: 0;
+						margin-top: $small-spacer-mobile;
+					}
+				}
+			}
+			.register-content {
+				.title {
+					padding-top: 24px;
+				}
+			}
+		}
+		.vertical-line {
+			display: none;
+		}
+	}
+}
+
+.upscale-medium {
+	:host {
+		.login {
+			padding: $medium-spacer-tablet 0;
+			.login-content {
+				.title {
+					margin-left: 15px;
+				}
+				.description {
+					margin-left: 15px;
+				}
+				.buttons {
+					margin-left: 15px;
+					flex-direction: row;
+				}
+			}
+		}
+		.vertical-line {
+			padding-left: 0px;
+			padding-right: 30px;
+		}
+	}
+}
+
+.upscale-large {
+	:host {
+		.login {
+			padding: $medium-spacer-tablet 0;
+			.login-content {
+				.buttons {
+					flex-direction: row;
+				}
+			}
+		}
+	}
+}
+
+.upscale-extra-large {
+	:host:not(.full-width) {
+		.login {
+			.login-content {
+				width: calc(92% - 366px);
+			}
+			.register-content {
+				width: calc(92% - 366px);
+			}
+		}
+	}
+}
