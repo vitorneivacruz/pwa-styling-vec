@@ -1,0 +1,349 @@
+@import '~styles/helpers/_module';
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+:host {
+	display: flex;
+	flex-direction: column;
+	color: #000000;
+	max-width: 950px;
+	margin: 0 auto;
+
+	upscale-attribute-set {
+		::ng-deep .body {
+			padding-top: 6px;
+			padding-bottom: 6px;
+			max-width: none;
+			border: none;
+		}
+	}
+
+	upscale-product-card {
+		::ng-deep upscale-attribute-set {
+			::ng-deep .body {
+				&.show {
+					border: none;
+					border-top: 2px solid $upscale-grey11;
+					padding-top: 12px;
+
+					.attribute-set-info {
+						display: none;
+					}
+
+					.body-content {
+						padding: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+.divider {
+	@include divider;
+}
+
+@media (max-width: 899px) {
+	.banner {
+		padding: 12px;
+		&__headline {
+			@include large-font-size;
+		}
+		&__sub-headline {
+			@include base-font-size;
+		}
+	}
+	.overview {
+		@include base-font-size;
+	}
+	.details-section {
+		.order-details__banner {
+			@include base-font-size;
+			height: 40px;
+			.order-details__banner-headline {
+				padding: 10px 15px;
+			}
+		}
+		.details-body {
+			@include base-font-size;
+		}
+		.shopping-button {
+			height: 40px;
+		}
+	}
+}
+@media (min-width: 900px) {
+	.banner {
+		padding: 24px;
+		&__headline {
+			@include extra-large-font-size;
+		}
+		&__sub-headline {
+			@include medium-font-size;
+		}
+	}
+	.overview {
+		@include base-font-size;
+	}
+	.details-section {
+		.order-details__banner {
+			@include medium-font-size;
+			height: 56px;
+			.order-details__banner-headline {
+				padding: 16px 15px;
+			}
+		}
+		.details-body {
+			@include base-font-size;
+		}
+		.shopping-button {
+			height: 56px;
+		}
+	}
+}
+
+upscale-shipping-tag {
+	& + upscale-shipping-tag {
+		margin-top: 25px;
+	}
+}
+
+.overview {
+	padding: 15px;
+	text-align: left;
+	width: 100%;
+	max-width: 1500px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	background-color: white;
+
+	&__content {
+		max-width: 870px;
+		width: 100%;
+		flex-direction: column;
+	}
+	&__headline {
+		font-weight: bold;
+		line-height: 1.22;
+		@include font-size(46);
+	}
+	&__sub-headline {
+		@include font-size(20);
+		line-height: 1.5;
+	}
+
+	.header {
+		padding-bottom: 4px;
+	}
+	.address-listing {
+		font-weight: 500;
+		&__info-block {
+			padding: 7px 0;
+		}
+		&__bold {
+			line-height: 1.5;
+		}
+		&__body {
+			display: flex;
+			flex-direction: column;
+			font-weight: normal;
+			line-height: 1.5;
+		}
+	}
+}
+.margin {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.details-section {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 24px;
+
+	.order-details {
+		width: 100%;
+		max-width: 1500px;
+		box-sizing: border-box;
+		margin: 20px 0;
+		upscale-product-card {
+			::ng-deep .card {
+				border: none;
+			}
+		}
+		&__banner {
+			background-color: #f7f7f7;
+			&:hover {
+				background-color: #f2f2f2;
+			}
+		}
+		&__banner-headline {
+			display: flex;
+			justify-content: space-between;
+			background-color: white;
+
+			font-weight: 500;
+			align-items: center;
+			box-sizing: border-box;
+			width: 100%;
+			margin: 0 auto;
+		}
+		.details-body {
+			width: 100%;
+			max-width: 1500px;
+			margin: 0 auto;
+			background-color: white;
+
+			&__item {
+				display: flex;
+				flex-direction: column;
+				padding: 15px;
+
+				& + .details-body__item {
+					border-top: 1px solid $upscale-grey7;
+				}
+			}
+			&__item-key {
+				font-weight: 500;
+				line-height: 1.5;
+			}
+			&__item-value {
+				display: flex;
+				flex-direction: column;
+			}
+			&__item-value-header {
+				padding-bottom: 4px;
+			}
+			&__item-value-body {
+				padding-bottom: 2px;
+
+				.original-cost {
+					text-decoration: line-through;
+					line-height: 1.63;
+					color: $upscale-grey4;
+					margin-right: 6px;
+				}
+			}
+			&__price-details {
+				background-color: #ffffff;
+				border-top: 1px solid #e0e0e0;
+				padding: 15px;
+				display: flex;
+				flex-direction: column;
+			}
+			&__price-item {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+
+				.italic {
+					font-style: italic;
+				}
+			}
+			&__price-total-key {
+				padding-top: 20px;
+				font-weight: 500;
+			}
+			&__price-totalvat-key {
+				font-weight: 400;
+				color: $upscale-grey4;
+			}
+			&__price-total-value {
+				padding-top: 20px;
+				font-weight: 500;
+			}
+			&__price-totalvat-value {
+				font-weight: 400;
+				color: $upscale-grey4;
+			}
+		}
+		.product-summary {
+			width: 100%;
+			max-width: 1500px;
+			margin: 0 auto;
+		}
+		.shipping-summary {
+			padding: 16px;
+			background-color: white;
+
+			&-info-costs {
+				.original-cost {
+					text-decoration: line-through;
+					line-height: 1.63;
+					color: $upscale-grey4;
+					margin-right: 6px;
+				}
+			}
+		}
+
+		.pickup-grid {
+			margin-top: 20px;
+		}
+
+		::ng-deep upscale-shipping-options {
+			.pickup-info {
+				background-color: $white;
+			}
+		}
+	}
+	.shopping-button {
+		@include button($background-color: #B15533);
+		width: 100%;
+		max-width: 1500px;
+		border-radius: 0;
+	}
+}
+
+em {
+	border: solid black;
+	border-width: 0 2px 2px 0;
+	height: 8px;
+	width: 8px;
+}
+
+.up-false {
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	margin-bottom: 4px;
+}
+.up-true {
+	transform: rotate(-135deg);
+	-webkit-transform: rotate(-135deg);
+	margin-top: 4px;
+}
+
+.division-info {
+	display: flex;
+	align-items: center;
+	padding-left: $small-spacer-tablet;
+	background-color: #ffffff;
+	width: 100%;
+	height: 48px;
+	box-sizing: border-box;
+	.division-image {
+		width: 35px;
+		height: 48px;
+		margin-right: $small-spacer-tablet;
+	}
+	.division-label {
+		@include medium-font-size;
+	}
+}
+
+.upscale-mobile :host {
+	.configuration {
+		padding-bottom: $medium-spacer-mobile;
+	}
+}
+
+.upscale-tablet :host {
+	.configuration {
+		padding-bottom: $medium-spacer-tablet;
+	}
+}
+
+.upscale-desktop :host {
+	.configuration {
+		padding-bottom: $medium-spacer-desktop;
+	}
+}
