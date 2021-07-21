@@ -3,10 +3,10 @@
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
 @import url('https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css');
 @import url('https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css');
-@import '~/helpers/_module';
+@import 'helpers/_module';
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap');
 html * {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 body {
     background-color: $color-white;
