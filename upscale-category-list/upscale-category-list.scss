@@ -1,0 +1,124 @@
+@import '~styles/helpers/_module';
+
+:host {
+	width: 100%;
+	.category-list {
+		display: flex;
+		box-sizing: border-box;
+
+		&.hidden {
+			.category {
+				background-color: green;
+				display: none;
+			}
+		}
+
+		&.collapsed {
+			background-color: white;
+			width: 100%;
+		}
+	}
+}
+
+:host upscale-ui-carousel::ng-deep {
+	.slick-next,
+	.slick-prev {
+		$icon-size: 45px;
+		height: $icon-size;
+		width: $icon-size;
+		border-radius: 50%;
+		background-color: rgba(255, 255, 255, 0.8);
+		z-index: 2;
+		&:before {
+			color: #000000;
+			font-family: 'Material Icons';
+			font-size: $icon-size;
+		}
+	}
+	.slick-next {
+		right: 25px;
+	}
+	.slick-prev {
+		left: 25px;
+	}
+	.slick-next:before {
+		content: 'keyboard_arrow_right';
+	}
+
+	.slick-prev:before {
+		content: 'keyboard_arrow_left';
+	}
+	.slick-prev.slick-disabled,
+	.slick-next.slick-disabled {
+		display: none;
+	}
+	.slick-slide {
+		height: inherit !important;
+		&:focus {
+			outline: none;
+		}
+	}
+	.slick-track {
+		display: flex;
+	}
+}
+
+mat-icon {
+	position: absolute;
+	color: black;
+	width: 40px;
+	height: 40px;
+	top: 50%;
+	@include font-size(40);
+	padding-left: 6px;
+}
+
+.carousel-container {
+	box-sizing: border-box;
+	width: 100%;
+	position: relative;
+	padding: 15px 5px;
+	height: 90px;
+
+	.slide {
+		flex: 0 0 200px;
+		margin: 0 10px 8px;
+		align-self: stretch;
+		@include clickable;
+		height: auto;
+	}
+}
+
+.upscale-tablet,
+.upscale-desktop {
+	:host {
+		.category-list {
+			&.default {
+				margin: 0 auto;
+				flex-wrap: wrap;
+				flex-grow: 1;
+
+				.category {
+					box-sizing: border-box;
+					padding: 16px;
+					flex: 0 0 25%;
+				}
+			}
+		}
+	}
+}
+
+.upscale-mobile {
+	:host {
+		.category-list {
+			&.default {
+				display: inline-flex;
+
+				.category {
+					padding: 5px;
+					width: 165px;
+				}
+			}
+		}
+	}
+}
