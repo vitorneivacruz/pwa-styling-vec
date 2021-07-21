@@ -1,0 +1,165 @@
+@import '~styles/helpers/_module';
+
+:host upscale-ui-carousel::ng-deep {
+	.slick-arrow {
+		$icon-size: 3.4rem;
+		width: 40px;
+		height: 40px;
+		background-color: white;
+		border-radius: 100%;
+		opacity: 0.8;
+
+		// Have to use z-index because image and arrows are all in one component.
+		z-index: 2;
+		@include clickable;
+		&:before {
+			color: $base-font-color;
+			font-family: 'Material Icons';
+			@include font-size(34);
+			opacity: inherit;
+		}
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	.slick-prev {
+		left: 4px;
+
+		&:before {
+			padding-right: 2px;
+			content: 'keyboard_arrow_left';
+		}
+	}
+
+	.slick-next {
+		right: 4px;
+
+		&:before {
+			padding-left: 2px;
+			content: 'keyboard_arrow_right';
+		}
+	}
+
+	.slick-slide {
+		&:focus {
+			outline: none;
+		}
+	}
+}
+
+.carousel-container {
+	position: relative;
+	height: 90px;
+	.carousel {
+		overflow: hidden;
+	}
+	.slide {
+		width: 100%;
+		@include clickable;
+
+		.upscale-generic-image {
+			padding-top: 56.25%;
+			@media (min-width: 1300px) {
+				padding-top: 730px;
+			}
+		}
+	}
+
+	.empty-slide {
+		padding-top: 56.25%;
+		@media (min-width: 1300px) {
+			padding-top: 730px;
+		}
+	}
+
+	.carousel-content {
+		position: relative;
+	}
+
+	.component-headline,
+	.component-sub-headline {
+		&_left {
+			text-align: left;
+		}
+
+		&_center {
+			text-align: center;
+		}
+
+		&_right {
+			text-align: right;
+		}
+	}
+
+	.content-container {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		box-sizing: border-box;
+		pointer-events: none;
+
+		.content-headline {
+			color: white;
+			@include large-font-size;
+			font-weight: 500;
+		}
+		.content-subheadline {
+			color: white;
+			@include base-font-size;
+			font-weight: 500;
+		}
+		.content-linktext {
+			@include medium-font-size;
+			padding: 10px 20px;
+			color: #fff;
+			background-color: #000;
+			margin-top: 12px;
+			border-radius: 2px;
+		}
+	}
+	.progress-bar {
+		height: 7px;
+		background-color: #cbcbcb;
+		width: 100%;
+		display: flex;
+		.progress {
+			height: 7px;
+		}
+		.active {
+			background-color: #4a4a4a;
+		}
+	}
+}
+
+.upscale-medium,
+.upscale-large,
+.upscale-extra-large {
+	:host {
+		.content-container {
+			.content-headline {
+				color: white;
+				@include extra-large-font-size;
+			}
+			.content-subheadline {
+				@include base-font-size;
+				color: white;
+			}
+			.content-linktext {
+				@include medium-font-size;
+				padding: 20px 40px;
+				color: #fff;
+				background-color: #000;
+				margin-top: 24px;
+				border-radius: 4px;
+			}
+		}
+	}
+}
