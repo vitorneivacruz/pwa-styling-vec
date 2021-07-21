@@ -23,13 +23,13 @@
 		.headline {
 			@include large-font-size;
 			letter-spacing: normal;
-			font-family: 'Poppins'
+			font-family: 'Poppins';
 		}
 
 		.sub-headline {
 			@include base-font-size;
 			letter-spacing: normal;
-			font-family: 'Poppins'
+			font-family: 'Poppins';
 		}
 
 		.body {
@@ -58,7 +58,7 @@
 						letter-spacing: normal;
 						color: $black;
 						word-break: break-all;
-						font-family: 'Poppins'
+						font-family: 'Poppins';
 					}
 				}
 			}
@@ -70,6 +70,7 @@
 			border-top: 1px solid $upscale-grey11;
 			margin: 12px 0;
 			width: 100%;
+			font-family: 'Poppins';
 
 			&-wrapper {
 				max-width: $max-attribute-width;
@@ -86,6 +87,7 @@
 				align-items: center;
 				justify-content: center;
 				font-weight: 500;
+				background-color: #B15533;
 
 				&.disabled {
 					background-color: $upscale-grey10;
