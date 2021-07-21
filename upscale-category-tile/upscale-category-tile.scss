@@ -1,0 +1,85 @@
+@import '~styles/helpers/_module';
+
+:host {
+	&.default {
+		@include clickable;
+		display: flex;
+		flex-direction: column;
+		min-height: 175px;
+		border-radius: 2px;
+		background-color: white;
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.07);
+		height: 100%;
+
+		&:hover:not(.selected) {
+			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14);
+			background-color: darken(white, 10%);
+		}
+
+		.name {
+			@include multiline-truncate-text-with-ellipsis(1em, 1.5, 3);
+			margin: 12px;
+			font-weight: 500;
+		}
+
+		.image {
+			height: 0;
+			width: 100%;
+			box-sizing: border-box;
+		}
+
+		&.selected {
+			background: $upscale-blue;
+
+			&:hover {
+				background-color: mix(white, $upscale-blue, 15%);
+			}
+			.image {
+				background-color: white;
+			}
+			.name {
+				color: white;
+			}
+		}
+	}
+
+	&.collapsed {
+		@include clickable;
+		height: 50px;
+		line-height: 50px;
+		background-color: white;
+		box-sizing: border-box;
+		display: flex;
+
+		&:hover {
+			.name {
+				background-color: darken(white, 10%);
+			}
+		}
+
+		&.selected {
+			.name {
+				border-bottom: 3px solid #000000;
+			}
+		}
+
+		.name {
+			padding: 0 16px;
+			white-space: nowrap;
+			font-weight: 300;
+		}
+	}
+
+	a:visited {
+		color: inherit;
+	}
+
+	a {
+		text-decoration: inherit;
+		color: inherit;
+
+		&.disabled {
+			pointer-events: none;
+		}
+	}
+}
