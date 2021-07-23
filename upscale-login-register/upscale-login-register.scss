@@ -88,7 +88,6 @@
 }
 
 .register-content {
-	display: none;
 	width: 100%;
 	.title {
 		@include large-font-size;
@@ -160,7 +159,6 @@ a {
 }
 
 .vertical-line {
-	display: none;
 	border-left: 1px solid $upscale-grey6;
 	padding: 0px 45px;
 }
@@ -252,4 +250,8 @@ a {
 			}
 		}
 	}
+}
+
+.register-content[_ngcontent-serverApp-c140] {
+    display: none im !important;
 }
