@@ -95,6 +95,10 @@
 					background-color: $upscale-grey10;
 					color: $upscale-grey4;
 				}
+				&.enabled {
+					background-color: #B15533 !important;
+					color:  #B15533 !important;
+				}
 
 				mat-spinner {
 					margin-left: -5px;
