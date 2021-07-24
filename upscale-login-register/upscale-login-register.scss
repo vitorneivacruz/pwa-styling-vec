@@ -38,10 +38,12 @@
 			padding-bottom: 24px;
 			padding-top: 110px;
 			margin-left: 100px;
+			text-align: center !important;
 		}
 		.description {
 			padding-bottom: 24px;
 			margin-left: 100px;
+			text-align: center !important;
 		}
 		.buttons {
 			display: flex;
@@ -64,6 +66,7 @@
 				align-items: center;
 				@include small-font-size;
 				font-weight: 500;
+				margin: 0 auto;
 				&:hover {
 					background-color: darken(white, 10%);
 				}
@@ -213,9 +216,11 @@ a {
 			.login-content {
 				.title {
 					margin-left: 15px;
+					text-align: center !important;
 				}
 				.description {
 					margin-left: 15px;
+					text-align: center !important;
 				}
 				.buttons {
 					margin-left: 15px;
