@@ -87,7 +87,11 @@ $fixed-button-bar-height: 100px;
 	}
 
 	.price {
-		@include base-font-size;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 38px;
+		line-height: 57px;
 	}
 
 	.sku {
@@ -122,11 +126,11 @@ $fixed-button-bar-height: 100px;
 			padding-left: 12px;
 			padding-right: 12px;
 			padding-top: 12px;
-			font-family: Poppins !important;
-			font-style: normal !important;
-			font-weight: 500 !important;
-			font-size: 42px !important;
-			line-height: 130% !important;
+			// font-family: Poppins !important;
+			// font-style: normal !important;
+			// font-weight: 500 !important;
+			// font-size: 42px !important;
+			// line-height: 130% !important;
 		}
 
 		.recurrence {
@@ -463,6 +467,11 @@ $fixed-button-bar-height: 100px;
 	.original-price {
 		text-decoration: line-through;
 	}
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 38px;
+	line-height: 57px;
 }
 
 .recurrence {
@@ -716,7 +725,11 @@ $fixed-button-bar-height: 100px;
 			line-height: 130% !important;
 		}
 		.price {
-			@include base-font-size;
+			font-family: Poppins;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 38px;
+			line-height: 57px;
 		}
 		.sku {
 			@include base-font-size;
@@ -863,7 +876,11 @@ $fixed-button-bar-height: 100px;
 		line-height: 130% !important;
 	}
 	.price {
-		@include medium-font-size;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 38px;
+		line-height: 57px;
 	}
 	.sku {
 		@include medium-font-size;
@@ -887,6 +904,6 @@ $fixed-button-bar-height: 100px;
 
 .card[_nghost-serverApp-c162] {
 	background: #FFFFFF;
-	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15) !important;
 	border-radius: 4px;
 }
