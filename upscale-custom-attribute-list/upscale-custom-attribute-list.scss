@@ -1,0 +1,90 @@
+@import '~styles/helpers/_module';
+
+:host {
+	.html-container::ng-deep {
+		@include header-defaults;
+	}
+}
+
+.attribute-details {
+	width: 100%;
+	box-sizing: border-box;
+
+	&__banner-headline {
+		display: flex;
+		justify-content: space-between;
+		font-weight: 500;
+		align-items: center;
+		box-sizing: border-box;
+		width: 100%;
+		height: 52px;
+		margin: 0 auto;
+		padding: 0 12px;
+		border-bottom: solid 1px $upscale-grey11;
+		@include base-font-size;
+		font-weight: 700;
+	}
+
+	&__body {
+		width: 100%;
+		padding: 12px;
+		box-sizing: border-box;
+		@include base-font-size;
+	}
+
+	&__body-list {
+		line-height: normal;
+		color: black;
+		padding-bottom: 10px;
+		line-height: 1.29;
+	}
+
+	&__body-html {
+		.html-container {
+			padding-bottom: 10px;
+			color: black;
+			line-height: 1.29;
+			overflow: auto;
+
+			font-family: 'Roboto';
+			@include font-size(16);
+			line-height: 24px;
+		}
+	}
+}
+
+em {
+	border: solid black;
+	border-width: 0 2px 2px 0;
+	height: 8px;
+	width: 8px;
+}
+
+.up-false {
+	transform: rotate(45deg);
+	margin-bottom: 4px;
+}
+
+.up-true {
+	transform: rotate(-135deg);
+	margin-top: 4px;
+}
+
+:host {
+	&.card {
+		border: solid 1px $upscale-grey11;
+		margin-bottom: 10px;
+
+		.attribute-details {
+			&__banner-headline {
+				border-bottom: none;
+			}
+		}
+	}
+}
+
+.card[_nghost-serverApp-c162] {
+	background: #FFFFFF;
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15) !important;
+	border-radius: 4px;
+}
