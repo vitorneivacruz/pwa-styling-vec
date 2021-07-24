@@ -79,11 +79,7 @@ $fixed-button-bar-height: 100px;
 	}
 
 	.title {
-		font-family: Poppins !important;
-		font-style: normal !important;
-		font-weight: 500 !important;
-		font-size: 42px !important;
-		line-height: 130% !important;
+		@include large-font-size;
 	}
 
 	.price {
@@ -106,11 +102,6 @@ $fixed-button-bar-height: 100px;
 			padding: 18px;
 		}
 
-		.custom-attributes {
-			background: #FFFFFF;
-			box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
-			border-radius: 4px;
-		}
 		.custom-attributes::ng-deep .list-item,
 		.description-holder {
 			padding-left: 16px;
@@ -126,12 +117,6 @@ $fixed-button-bar-height: 100px;
 		.title {
 			padding-left: 12px;
 			padding-right: 12px;
-			padding-top: 12px;
-			font-family: Poppins !important;
-			font-style: normal !important;
-			font-weight: 500 !important;
-			font-size: 42px !important;
-			line-height: 130% !important;
 		}
 
 		.recurrence {
@@ -141,6 +126,15 @@ $fixed-button-bar-height: 100px;
 			.dropdown {
 				max-width: 348px;
 			}
+		}
+
+		.title {
+			padding-top: 12px;
+			font-family: Poppins !important;
+			font-style: normal !important;
+			font-weight: 500 !important;
+			font-size: 42px !important;
+			line-height: 130% !important;
 		}
 
 		.variant-selectors::ng-deep {
@@ -227,11 +221,8 @@ $fixed-button-bar-height: 100px;
 	margin: 10px 60px;
 
 	.title {
-		font-family: Poppins !important;
-		font-style: normal !important;
-		font-weight: 500 !important;
-		font-size: 42px !important;			
-		line-height: 130% !important;
+		@include large-font-size;
+		font-weight: bold;
 		padding: 25px 12px 0;
 	}
 
@@ -476,11 +467,7 @@ $fixed-button-bar-height: 100px;
 }
 
 .title {
-	font-family: Poppins !important;
-	font-style: normal !important;
-	font-weight: 500 !important;
-	font-size: 42px !important;
-	line-height: 130% !important;
+	font-weight: bold;
 	padding-bottom: 4px;
 }
 
@@ -714,11 +701,7 @@ $fixed-button-bar-height: 100px;
 .upscale-medium {
 	:host {
 		.title {
-			font-family: Poppins !important;
-			font-style: normal !important;
-			font-weight: 500 !important;
-			font-size: 42px !important;
-			line-height: 130% !important;
+			@include large-font-size;
 		}
 		.price {
 			@include base-font-size;
@@ -861,11 +844,7 @@ $fixed-button-bar-height: 100px;
 
 @media (max-width: 899px) {
 	.title {
-		font-family: Poppins !important;
-		font-style: normal !important;
-		font-weight: 500 !important;
-		font-size: 42px !important;
-		line-height: 130% !important;
+		@include medium-font-size;
 	}
 	.price {
 		@include medium-font-size;
@@ -888,4 +867,10 @@ $fixed-button-bar-height: 100px;
 .attribute-content {
 	max-width: 900px;
 	padding: 0 30px;
+}
+
+.card[_nghost-serverApp-c162] {
+	background: #FFFFFF;
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
 }
