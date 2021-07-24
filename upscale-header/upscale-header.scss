@@ -62,16 +62,3 @@ $row-height: 54px;
 		}
 	}
 }
-
-.section__button {
-	@include button;
-	width: 100%;
-	height: 50px;
-	margin-top: 10px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-weight: 500;
-	background-color: #B15533 !important;
-	font-family: 'Poppins';
-}
