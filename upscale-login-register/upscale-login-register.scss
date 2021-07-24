@@ -55,6 +55,7 @@
 				border-radius: 2px;
 				border-radius: 2px;
 				border: solid 2px #B15533;
+				font-family: 'Poppins' !important;
 				color: $black;
 				background-color: $white;
 				display: inline-flex;
@@ -173,9 +174,11 @@ a {
 				.title {
 					padding-top: 0px;
 					margin-left: 0px;
+					text-align: center;
 				}
 				.description {
 					margin-left: 0px;
+					text-align: center;
 				}
 				.buttons {
 					flex-direction: column;
@@ -183,6 +186,7 @@ a {
 					margin-left: 0px;
 					.login-button {
 						min-width: fit-content;
+						margin: 0 auto;
 					}
 					.register-button {
 						margin-left: 0;
