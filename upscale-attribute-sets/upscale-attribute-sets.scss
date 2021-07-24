@@ -139,6 +139,22 @@
 		}
 	}
 }
+.upscale-mobile.upscale-medium,
+.upscale-tablet {
+	:host {
+		.container {
+			padding: 24px 0;
+		}
+	}
+}
+
+.upscale-mobile.upscale-small,
+.upscale-mobile.upscale-extra-small {
+	:host {
+		.container {
+			padding: 12px 0;
+		}
+	}
 
 .actions[_ngcontent-serverApp-c137] .section__button[_ngcontent-serverApp-c137] {
 	background-color: #B15533 !important;
