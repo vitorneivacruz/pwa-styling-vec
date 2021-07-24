@@ -130,11 +130,11 @@ $fixed-button-bar-height: 100px;
 
 		.title {
 			padding-top: 12px;
-			font-family: Poppins;
-			font-style: normal;
-			font-weight: 500;
-			font-size: 42px;
-			line-height: 130%;
+			font-family: Poppins !important;
+			font-style: normal !important;
+			font-weight: 500 !important;
+			font-size: 42px !important;
+			line-height: 130% !important;
 		}
 
 		.variant-selectors::ng-deep {
