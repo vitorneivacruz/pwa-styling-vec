@@ -88,7 +88,7 @@
 				align-items: center;
 				justify-content: center;
 				font-weight: 500;
-                background-color: #B15533;
+                background-color: #B15533 !important;
 				font-family: 'Poppins';
 
 				&.disabled {
@@ -157,13 +157,4 @@
 			padding: 12px 0;
 		}
 	}
-}
-
-#upscale .attribute-sets-headline {
-    font-family: Poppins !important;
-    color: #B15533;
-}
-
-.section__button[_ngcontent-serverApp-c220] {
-	background-color: #B15533 !important;
 }
