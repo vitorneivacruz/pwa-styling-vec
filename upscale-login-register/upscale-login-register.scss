@@ -87,6 +87,7 @@
 }
 
 .register-content {
+	display: none;
 	width: 100%;
 	.title {
 		@include large-font-size;
