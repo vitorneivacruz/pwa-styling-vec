@@ -1,0 +1,150 @@
+@import '~styles/helpers/_module';
+
+:host {
+	display: block;
+
+	.formgroup {
+		&__container {
+			border-radius: 3px;
+			overflow: hidden;
+			position: relative;
+
+			&-arrow {
+				display: flex;
+				border-top: 1px solid $upscale-grey11;
+				justify-content: center;
+				background-color: white;
+				flex: 1 1 44px;
+				padding-top: 16px;
+
+				&::after {
+					content: '';
+					height: 7px;
+					width: 7px;
+					border-right: 2px solid $upscale-grey2;
+					border-bottom: 2px solid $upscale-grey2;
+					transform: rotate(45deg);
+				}
+			}
+
+			&-header-arrow {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 30px;
+				padding-bottom: 0;
+				background-color: white;
+
+				&::after {
+					content: '';
+					height: 7px;
+					width: 7px;
+					border-right: 2px solid $upscale-grey2;
+					border-bottom: 2px solid $upscale-grey2;
+					transform: rotate(45deg);
+				}
+
+				&.flipped {
+					padding-top: 4px;
+					padding-bottom: 4px;
+				}
+
+				&.flipped::after {
+					transform: rotate(-135deg);
+				}
+
+				&.unexpandable::after {
+					border-right: 2px solid rgba($upscale-grey2, 30%);
+					border-bottom: 2px solid rgba($upscale-grey2, 30%);
+				}
+			}
+
+			&-row {
+				height: 45px;
+				padding: 0 11px;
+				background-color: white;
+			}
+
+			&-header {
+				flex-grow: 1;
+				@include medium-font-size;
+				box-sizing: border-box;
+				align-items: center;
+				color: black;
+			}
+
+			&-header,
+			&-row {
+				display: flex;
+			}
+
+			&-content {
+				overflow: hidden;
+				display: flex;
+				&-form {
+					width: 100%;
+				}
+			}
+		}
+
+		&__actions {
+			display: flex;
+			width: 100%;
+		}
+		&__actions:empty {
+			display: none;
+		}
+
+		&__cancel {
+			@include clickable;
+			text-decoration: underline;
+			color: $upscale-grey2;
+			min-width: 100px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		&__button {
+			@include button;
+			@include spinner(white);
+			width: 100%;
+			margin-top: 12px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: #B15533 !important;
+
+			&.disabled {
+				background-color: $upscale-grey10 !important;
+				color: $upscale-grey4 !important;
+			}
+		}
+
+		&__button-spinner {
+			margin-right: 12px;
+		}
+
+		&__messages {
+			box-sizing: border-box;
+			margin: 10px 0;
+			padding: 6px 12px;
+			width: 100%;
+			border-radius: 2px;
+			color: $upscale-grey4;
+			background-color: white;
+			font-size: $small-font-size;
+			justify-content: center;
+			align-items: center;
+
+			&.error {
+				color: white;
+				background-color: #dc493a;
+			}
+		}
+
+		&__message {
+			margin: 6px 0;
+		}
+	}
+}
