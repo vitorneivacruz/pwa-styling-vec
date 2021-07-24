@@ -174,11 +174,11 @@ a {
 				.title {
 					padding-top: 0px;
 					margin-left: 0px;
-					text-align: center;
+					text-align: center !important;
 				}
 				.description {
 					margin-left: 0px;
-					text-align: center;
+					text-align: center !important;
 				}
 				.buttons {
 					flex-direction: column;
@@ -189,7 +189,7 @@ a {
 						margin: 0 auto;
 					}
 					.register-button {
-						margin-left: 0;
+						margin-left: 0 !important;
 						margin-top: $small-spacer-mobile;
 					}
 				}
@@ -224,6 +224,7 @@ a {
 			}
 		}
 		.vertical-line {
+			display: none !important;
 			padding-left: 0px;
 			padding-right: 30px;
 		}
