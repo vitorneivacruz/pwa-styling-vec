@@ -1,4 +1,5 @@
 @import '~styles/helpers/_module';
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 
 :host {
 	display: block;
@@ -114,6 +115,7 @@
 			align-items: center;
 			justify-content: center;
 			background-color: #B15533 !important;
+			font-family: 'Poppins' !important;
 
 			&.disabled {
 				background-color: $upscale-grey10 !important;
