@@ -79,11 +79,19 @@ $fixed-button-bar-height: 100px;
 	}
 
 	.title {
-		@include large-font-size;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 42px;
+		line-height: 130%;
 	}
 
 	.price {
-		@include base-font-size;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 38px;
+		line-height: 57px;
 	}
 
 	.sku {
@@ -451,11 +459,6 @@ $fixed-button-bar-height: 100px;
 
 .price {
 	padding-bottom: 18px;
-	font-family: Poppins;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 38px;
-	line-height: 57px;
 	.original-price {
 		text-decoration: line-through;
 	}
@@ -467,12 +470,8 @@ $fixed-button-bar-height: 100px;
 }
 
 .title {
+	font-weight: bold;
 	padding-bottom: 4px;
-	font-family: Poppins;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 42px;
-	line-height: 130%;
 }
 
 .noOptions {
