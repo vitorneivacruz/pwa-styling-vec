@@ -88,7 +88,7 @@
 				align-items: center;
 				justify-content: center;
 				font-weight: 500;
-                background-color: #B15533 !important;
+                color: #B15533 !important;
 				font-family: 'Poppins';
 
 				&.disabled {
@@ -157,8 +157,4 @@
 			padding: 12px 0;
 		}
 	}
-}
-
-.section__button {
-    background-color: #B15533 !important;
 }
