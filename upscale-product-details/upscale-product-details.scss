@@ -79,19 +79,11 @@ $fixed-button-bar-height: 100px;
 	}
 
 	.title {
-		font-family: Poppins;
-		font-style: normal;
-		font-weight: 500;
-		font-size: 42px;
-		line-height: 130%;
+		@include large-font-size;
 	}
 
 	.price {
-		font-family: Poppins;
-		font-style: normal;
-		font-weight: 500;
-		font-size: 38px;
-		line-height: 57px;
+		@include base-font-size;
 	}
 
 	.sku {
@@ -138,6 +130,11 @@ $fixed-button-bar-height: 100px;
 
 		.title {
 			padding-top: 12px;
+			font-family: Poppins;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 42px;
+			line-height: 130%;
 		}
 
 		.variant-selectors::ng-deep {
