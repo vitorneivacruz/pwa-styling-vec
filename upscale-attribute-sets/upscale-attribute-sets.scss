@@ -87,7 +87,7 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				font-weight: 100;
+				font-weight: 500;
                 background-color: #B15533 !important;
 				font-family: 'Poppins';
 
@@ -157,4 +157,9 @@
 			padding: 12px 0;
 		}
 	}
+}
+
+.section__button {
+	@include button;
+	background-color: #B15533 !important;
 }
