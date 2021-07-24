@@ -22,7 +22,7 @@
 		::ng-deep .formgroup__button {
 			border-radius: 0;
 			margin-top: 0;
-			background-color: #B15533;
+			background-color: #B15533 !important;
 		}
 	}
 }
@@ -95,7 +95,7 @@
 			font-weight: 500;
 			line-height: 1.5;
 			letter-spacing: normal;
-			color: #B15533;
+			color: #B15533 !important;
 			cursor: pointer;
 
 			&:hover {
@@ -177,7 +177,7 @@
 		.formgroup__button {
 			height: 50px;
 			font-weight: 500;
-			background-color: #B15533;
+			background-color: #B15533 !important;
 		}
 	}
 }
