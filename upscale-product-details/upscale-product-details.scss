@@ -791,13 +791,6 @@ $fixed-button-bar-height: 100px;
 .upscale-large,
 .upscale-extra-large {
 	:host {
-		.title {
-			@include large-font-size;
-		}
-		.price {
-			@include medium-font-size;
-		}
-
 		.sku {
 			@include medium-font-size;
 		}
