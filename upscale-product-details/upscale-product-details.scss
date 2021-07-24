@@ -207,21 +207,6 @@ $fixed-button-bar-height: 100px;
 
 .product-detail-content {
 	background-color: $pdp-background;
-
-	.title {
-		font-family: Poppins;
-		font-style: normal;
-		font-weight: 500;
-		font-size: 42px;
-		line-height: 130%;
-	}
-	.selling-price{
-		font-family: Poppins;
-		font-style: normal;
-		font-weight: 500;
-		font-size: 38px;
-		line-height: 57px;
-	}
 }
 
 .collection-hover {
@@ -466,6 +451,11 @@ $fixed-button-bar-height: 100px;
 
 .price {
 	padding-bottom: 18px;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 38px;
+	line-height: 57px;
 	.original-price {
 		text-decoration: line-through;
 	}
@@ -477,8 +467,12 @@ $fixed-button-bar-height: 100px;
 }
 
 .title {
-	font-weight: bold;
 	padding-bottom: 4px;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 42px;
+	line-height: 130%;
 }
 
 .noOptions {
