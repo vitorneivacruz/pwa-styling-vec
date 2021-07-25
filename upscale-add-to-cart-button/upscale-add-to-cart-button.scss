@@ -1,0 +1,95 @@
+@import '~styles/helpers/_module';
+
+:host {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+
+	cursor: pointer;
+	@include truncate-text-with-ellipsis;
+
+	&:hover {
+		&.icon-button {
+			filter: brightness(90%);
+		}
+
+		&.text-button {
+			filter: brightness(90%);
+		}
+	}
+
+	&.text-button {
+		color: white;
+		font-weight: 500;
+		padding: 0 20px;
+		height: 38px;
+		background-color: black;
+		max-width: 100%;
+		border-radius: 4px;
+		@include base-font-size;
+		border: solid black 1px;
+	}
+
+	&.icon-button {
+		align-self: stretch;
+		align-items: center;
+		flex: 1;
+		background-color: black;
+		border-radius: 4px;
+		color: white;
+		@include medium-font-size;
+		font-weight: 100;
+		border-radius: 4px;
+		border: solid black 1px;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	mat-spinner {
+		::ng-deep circle {
+			stroke: white;
+		}
+	}
+
+	mat-icon {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+.upscale-extra-small,
+.upscale-small,
+.upscale-large,
+.upscale-extra-large {
+	:host {
+		&.icon-button {
+			$size: 38px;
+			min-height: $size;
+			height: 100%;
+			max-width: $size;
+			width: $size;
+		}
+
+		&.text-button {
+			height: 38px;
+		}
+	}
+}
+
+.upscale-medium {
+	:host {
+		&.icon-button {
+			$size: 48px;
+			height: 100%;
+			width: $size;
+			max-width: $size;
+			min-height: $size;
+		}
+		&.text-button {
+			height: 48px;
+			padding: 0 24px;
+		}
+	}
+}
