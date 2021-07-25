@@ -409,10 +409,14 @@ a {
 	}
 }
 
-.product-tile {
+.product-tile[_ngcontent-serverApp-c273] {
     background-color: #fafafa !important;
 }
 
-[_nghost-serverApp-c270]:not(.list-layout) .image[_ngcontent-serverApp-c270] {
+[_nghost-serverApp-c270] {
+	background-color: white;
+}
+
+.image[_ngcontent-serverApp-c270] .product-image[_ngcontent-serverApp-c270] {
 	background-color: white;
 }
