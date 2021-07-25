@@ -116,6 +116,7 @@
 	@extend .row;
 
 	.buy-buttons {
+		align-self: baseline !important;
 		width: 100%;
         background-color: #FAFAFA !important;
 		.one-tap-buy {
@@ -404,4 +405,12 @@ a {
 	&.bottom-badges {
 		order: 10;
 	}
+}
+
+.product-tile[_ngcontent-serverApp-c273] {
+    background-color: #fafafa !important;
+}
+
+[_nghost-serverApp-c270]:not(.list-layout) .image[_ngcontent-serverApp-c270] {
+	background-color: white;
 }
