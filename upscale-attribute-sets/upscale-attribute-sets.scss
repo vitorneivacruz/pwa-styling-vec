@@ -21,9 +21,11 @@
 		}
 
 		.headline {
-			@include large-font-size;
 			letter-spacing: normal;
-			font-family: 'Poppins'
+			font-family: 'Poppins';
+			font-style: normal;
+			font-weight: 500;
+			line-height: 25px;
 		}
 
 		.sub-headline {
