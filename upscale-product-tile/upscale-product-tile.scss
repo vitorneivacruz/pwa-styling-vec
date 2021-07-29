@@ -63,7 +63,7 @@
 		align-self: baseline !important;
 		justify-content: flex-end;
 		width: 100%;
-        background-color: #FAFAFA !important;
+        background-color: transparent !important;
 
 		.one-tap-buy {
 			$height: 40px;
@@ -118,7 +118,7 @@
 	.buy-buttons {
 		align-self: baseline !important;
 		width: 100%;
-        background-color: #FAFAFA !important;
+        background-color: transparent !important;
 		.one-tap-buy {
 			$height: 45px;
 			align-self: stretch;
@@ -160,7 +160,7 @@
 		.buy-buttons {
 			align-self: baseline !important;
 			justify-content: flex-end;
-            background-color: #FAFAFA !important;
+            background-color: transparent !important;
 		}
 	}
 
@@ -281,7 +281,7 @@
 		margin-top: auto;
 		padding: 14px 0;
 		text-align: center;
-        background-color: #FAFAFA !important;
+        background-color: transparent !important;
 		align-self: baseline !important;
 
 		upscale-one-tap-buy-button {
