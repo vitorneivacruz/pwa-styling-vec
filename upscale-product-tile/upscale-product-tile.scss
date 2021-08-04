@@ -64,6 +64,7 @@
 		justify-content: flex-end;
 		width: 100%;
         background-color: transparent !important;
+		margin-left: 12px;
 
 		.one-tap-buy {
 			$height: 40px;
@@ -119,6 +120,7 @@
 		align-self: baseline !important;
 		width: 100%;
         background-color: transparent !important;
+		margin-left: 12px;
 		.one-tap-buy {
 			$height: 45px;
 			align-self: stretch;
@@ -161,6 +163,7 @@
 			align-self: baseline !important;
 			justify-content: flex-end;
             background-color: transparent !important;
+			margin-left: 12px;
 		}
 	}
 
@@ -279,6 +282,7 @@
 		display: inline-flex;
 		justify-content: center;
 		margin-top: auto;
+		margin-left: 12px;
 		padding: 14px 0;
 		text-align: center;
         background-color: transparent !important;
