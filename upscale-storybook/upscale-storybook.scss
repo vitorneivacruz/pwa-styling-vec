@@ -11,6 +11,7 @@
 	.title {
 		@include extra-large-font-size;
 		font-family: 'Poppins';
+        font-size: 36px !important;
 
 		&-alignment {
 			&_left {
