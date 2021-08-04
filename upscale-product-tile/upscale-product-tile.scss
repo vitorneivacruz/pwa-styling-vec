@@ -81,6 +81,7 @@
 
 	.column {
 		flex: 1;
+        border-radius: 4px !important;
 	}
 
 	.details1 {
@@ -309,6 +310,7 @@ a {
 	display: flex;
 	flex-direction: column;
 	min-width: 0;
+    border-radius: 4px !important;
 }
 
 .row {
