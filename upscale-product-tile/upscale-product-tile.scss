@@ -330,6 +330,7 @@ a {
 
 		.name {
 			@include multiline-truncate-text-with-ellipsis(1.8rem, 1.5, 3);
+			height: 51px;
 		}
 
 		.price {
