@@ -49,7 +49,8 @@
 		margin: 24px 6px;
 		&__text {
 			@include base-font-size;
-			color: #c5198c;
+			color: #333333;
+            font-size: 21px !important; //vitor change
 		}
 
 		&__text-result {
@@ -179,6 +180,7 @@
 			.search__text {
 				@include small-font-size;
 				margin-left: 2.5%;
+               			 font-size: 15px !important; //vitor change
 			}
 		}
 	}
