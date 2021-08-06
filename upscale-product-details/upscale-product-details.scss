@@ -801,6 +801,7 @@ $fixed-button-bar-height: 100px;
 .upscale-large,
 .upscale-extra-large {
 	:host {
+        
 		.collection-children {
 			upscale-product-peek {
 				padding: 0;
@@ -849,6 +850,11 @@ $fixed-button-bar-height: 100px;
 		.collection-errors {
 			text-align: right;
 		}
+        .price {
+			//alterações Vitor tamanho letra em desktop
+			line-height: 1.55;
+            font-weight: 500;
+            font-size: 36px !important;
 	}
 }
 
