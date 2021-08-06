@@ -31,6 +31,7 @@
 
 		&.selected {
 			background: $upscale-blue;
+			background-color: rgb(177, 85, 51) !important; //change background color when selected
 
 			&:hover {
 				background-color: mix(white, $upscale-blue, 15%);
