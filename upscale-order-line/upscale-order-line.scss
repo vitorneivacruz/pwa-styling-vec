@@ -178,7 +178,7 @@
 
 		&__cancel {
 			@include clickable;
-			display: flex;
+			display: none; //changed to none
 			align-items: center;
 			justify-content: center;
 			height: 45px;
