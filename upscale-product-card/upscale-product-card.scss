@@ -468,7 +468,11 @@
 						}
 					}
 					.prices {
-						@include medium-font-size;
+						//@include medium-font-size;
+                        //vitor change
+                        color: #B15533;
+                        font-size: 24px !important;
+                        line-height: 36px;
 						.lineDiscount {
 							@include base-font-size;
 						}
