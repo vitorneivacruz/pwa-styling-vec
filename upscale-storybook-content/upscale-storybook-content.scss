@@ -1,3 +1,5 @@
+////Storybook content 
+
 @import '~styles/helpers/_module';
 :host {
 	display: block;
@@ -15,6 +17,7 @@
 		position: relative;
 		display: flex;
 		flex-direction: column;
+        box-shadow: 0px 8px 16px rgb(0 0 0 / 15%);
 
 		.image-aspect-ratio {
 			&_16-9 {
