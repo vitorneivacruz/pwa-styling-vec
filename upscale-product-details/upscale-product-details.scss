@@ -93,6 +93,7 @@ $fixed-button-bar-height: 100px;
 		font-weight: 500;
 		font-size: 38px;
 		line-height: 57px;
+        display: flex;
 	}
 
 	.sku {
@@ -469,12 +470,14 @@ $fixed-button-bar-height: 100px;
 	padding-bottom: 18px;
 	.original-price {
 		text-decoration: line-through;
+        margin-right: 15px;
 	}
 	font-family: Poppins;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 38px;
 	line-height: 57px;
+    display: flex;
 }
 
 .recurrence {
@@ -733,6 +736,7 @@ $fixed-button-bar-height: 100px;
 			font-weight: 500;
 			font-size: 21px;
 			line-height: 31.5px;
+            display: flex !important;
 		}
 		.sku {
 			@include base-font-size;
@@ -890,6 +894,7 @@ $fixed-button-bar-height: 100px;
 		font-weight: 500;
 		font-size: 38px;
 		line-height: 57px;
+        display: flex;
 	}
 	.sku {
 		@include medium-font-size;
