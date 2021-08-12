@@ -1,0 +1,194 @@
+@import '~styles/helpers/_module';
+@import '~app/components/account/account-styles';
+
+:host {
+	display: block;
+
+	upscale-attribute-set {
+		::ng-deep .body {
+			padding-top: 6px;
+			padding-bottom: 6px;
+			max-width: none;
+			border: none;
+		}
+	}
+
+	.upscale-breadcrumbs {
+		background-color: white;
+	}
+
+	.details-header {
+		margin: 0 auto;
+		padding: 12px;
+		box-sizing: border-box;
+
+		&__status {
+			@include extra-large-font-size;
+			font-weight: 500;
+		}
+
+		&__date-created,
+		&__order-id {
+			@include base-font-size;
+		}
+	}
+
+	.order-details-cancel {
+		@include transparent-button;
+		height: 45px;
+		width: 100%;
+		margin: 12px 0;
+		display: none !important;
+	}
+
+	.order-details {
+		padding: 12px;
+
+		&__order-line {
+			margin: 12px 0;
+			background-color: white;
+
+			&.header-attached {
+				margin-top: 0;
+			}
+
+			.order-details__info-card-header {
+				background-color: white;
+			}
+		}
+
+		&__line-item,
+		&__total {
+			display: flex;
+			justify-content: space-between;
+			line-height: 1.71;
+
+			.italic {
+				font-style: italic;
+			}
+		}
+
+		&__total {
+			font-weight: 500;
+		}
+		&__vat-total {
+			display: flex;
+			justify-content: space-between;
+			line-height: 1.71;
+
+			.italic {
+				font-style: italic;
+			}
+		}
+		&__vat-total {
+			font-weight: 400;
+			color: $upscale-grey4;
+		}
+
+		&__info-cards {
+			upscale-shipping-options {
+				::ng-deep .pickup-info {
+					color: inherit;
+				}
+			}
+
+			upscale-shipping-pickup-info {
+				::ng-deep .pickup-info {
+					&-title,
+					&-desc {
+						color: inherit;
+					}
+
+					&-hours {
+						.view-hours {
+							color: inherit;
+						}
+
+						.store-hours h3,
+						.store-hours ul li {
+							color: inherit;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.cancel-reason-selector {
+		padding: 12px 24px;
+	}
+
+	.divison-spacer {
+		margin-bottom: 35px;
+	}
+
+	.section-header {
+		margin-top: 48px;
+
+		@include medium-font-size;
+		font-weight: 500;
+
+		padding: 0 8px;
+	}
+}
+
+.card {
+	background: white;
+	border-radius: 2px;
+	margin: 12px 0;
+
+	$internal-padding: 8px;
+
+	.header {
+		padding: 0 $internal-padding;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 50px;
+		padding: 0 $small-spacer-tablet;
+		@include medium-font-size;
+		border-bottom: 1px solid $upscale-grey9;
+		.division-info-container {
+			display: flex;
+			align-items: center;
+			.division-image {
+				width: 35px;
+				height: 48px;
+				margin-right: $small-spacer-tablet;
+			}
+		}
+		.division-label {
+			@include medium-font-size;
+		}
+	}
+
+	.divider {
+		@include divider;
+		background-color: $upscale-grey9;
+	}
+
+	.content {
+		padding: $internal-padding;
+	}
+}
+
+.upscale-medium,
+.upscale-large,
+.upscale-extra-large {
+	:host {
+		.details-header {
+			margin-top: 12px;
+			border-radius: 2px;
+			max-width: 1500px;
+			box-sizing: border-box;
+		}
+
+		.order-details-cancel {
+			max-width: 191px;
+		}
+	}
+}
+
+.cancel-reason-selector {
+	padding: 12px 24px;
+}
