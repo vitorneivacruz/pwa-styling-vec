@@ -9,6 +9,7 @@
 .attribute-details {
 	width: 100%;
 	box-sizing: border-box;
+    padding: 20px !important;
 
 	&__banner-headline {
 		display: flex;
@@ -17,12 +18,14 @@
 		align-items: center;
 		box-sizing: border-box;
 		width: 100%;
-		height: 31px;
+		line-height: 31px;
+        font-size: 21px !important;
 		margin: 0 auto;
-		padding: 0 12px;
+		padding: 20px;
 		border-bottom: solid 1px $upscale-grey11;
+
 		@include base-font-size;
-		font-weight: 700;
+		
 	}
 
 	&__body {
