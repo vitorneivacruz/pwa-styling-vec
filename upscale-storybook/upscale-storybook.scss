@@ -983,6 +983,8 @@
 }
 
 .upscale-desktop {
+	background:  purple !important;
+
 	:host {
 		max-width: 1300px;
 	}
@@ -1033,6 +1035,8 @@
 
 :host {
 	.container-content {
+	background:  green !important;		
+
 		upscale-ui-carousel::ng-deep {
 			.slick-next {
 				right: -25px;
@@ -1074,6 +1078,7 @@
 
 
 .upscale-desktop {
+	background:  red !important;
 	.container-content{
 		max-width: 1740px !important;
     	width: 100% !important;
