@@ -349,58 +349,6 @@
 
 	upscale-open-payment-checkout{
 		padding-top: 10px !important;
-	}
-
-
-	upscale-shipping-selector{
-		.shipping{
-			.shipping__bold{
-				display: none !important;
-		 	}
-		}
-	}
-	   
-	upscale-open-payment-checkout{
-		.checkout-forms{
-			.checkout-sections{
-	   
-		   		&:nth-child(4){
-					.formgroup__container-header{
-						color: rgba(0,0,0,.0) !important;
-		 
-						 &:before {
-			  				 content: 'Condições de Venda';
-			  				 color: rgba(0,0,0,1) !important;
-						 }
-					}
-		   		}
-		
-				&:nth-child(5){
-					.formgroup__container-header{
-						color: rgba(0,0,0,.0) !important;
-		 
-			 			 &:before {
-							content: 'Método de pagamento';
-							color: rgba(0,0,0,1) !important;
-			 			 }
-					 }
-	   
-					.redirect-button{
-						.section__button{
-							color: rgba(0,0,0,.0) !important;
-		 
-							&:before {
-								content: 'Escolher pagamento';
-								 color: rgba(255, 255, 255, 1) !important;
-								 left: 40px;
-								 position: relative;
-							}
-			  			}	
-					}
-		   		}
-	   
-			 }
-		}
 	}	   
 }
 
