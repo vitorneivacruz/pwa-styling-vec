@@ -38,19 +38,16 @@
 			color: $black;
 			padding-bottom: 24px;
 			padding-top: 110px;
-			margin-left: 100px;
 			text-align: center !important;
 		}
 		.description {
 			padding-bottom: 24px;
-			margin-left: 100px;
 			text-align: center !important;
 		}
 		.buttons {
 			display: flex;
 			flex-direction: row;
-			margin-left: 100px;
-
+			
 			.login-button {
 				@include button;
 				min-width: 250px;

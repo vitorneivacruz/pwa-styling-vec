@@ -152,6 +152,14 @@
 			font-size: 14px !important;
 			line-height: 21px;
 		}
+
+		.cart__total-container{
+			.cart__total-item{
+				.vat-total{
+					display: none !important;
+				}
+			}
+		}
 	}
 
 	.coupon {
