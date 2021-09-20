@@ -28,18 +28,9 @@
         box-shadow: 0px 8px 16px rgb(0 0 0 / 15%); //adding box shadow effect
 
 		.image-aspect-ratio {
-			&_16-9 {
-				padding-top: calc(9 / 16 * 100);
-			}
-
-			&_4-3 {
-				padding-top: calc(3 / 4 * 100);
-			}
-
-			&_1-1 {
-				padding-top: 100%;
-			}
-		}
+			 &_16-9 { height: calc(9 / 16 * 100%); }
+			 &_4-3 { height: calc(3 / 4 * 100%); }
+			 &_1-1 { height: 100%; } }
 
 		.overlay {
 			position: absolute;
