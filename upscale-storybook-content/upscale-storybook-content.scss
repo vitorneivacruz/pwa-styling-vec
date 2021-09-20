@@ -1,5 +1,5 @@
 ////Storybook content 
-
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 @import '~styles/helpers/_module';
 :host {
 	display: block;
@@ -135,6 +135,9 @@
 			&.product {
 				.product-name {
 					text-decoration: none;
+					font-family: 'Poppins'; //VC changes
+					font-size: 18px;
+					font-weight: 500;
 				}
 
 				.price {
