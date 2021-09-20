@@ -29,15 +29,15 @@
 
 		.image-aspect-ratio {
 			&_16-9 {
-				height: calc(9 / 16 * 100);
+				padding-top: calc(9 / 16 * 100);
 			}
 
 			&_4-3 {
-				height: calc(3 / 4 * 100);
+				padding-top: calc(3 / 4 * 100);
 			}
 
 			&_1-1 {
-				height: 100%;
+				padding-top: 100%;
 			}
 		}
 
