@@ -6,7 +6,15 @@
 	position: relative;
 	$dark-font-color: #000000;
 	$light-font-color: #ffffff;
-
+	.disabled-link {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		pointer-events: none;
+	}
+	.enabled-link {
+		pointer-events: auto;
+	}
 	.imageDetail {
 		height: 100%;
 	}
@@ -17,7 +25,7 @@
 		position: relative;
 		display: flex;
 		flex-direction: column;
-        box-shadow: 0px 8px 16px rgb(0 0 0 / 15%);
+        box-shadow: 0px 8px 16px rgb(0 0 0 / 15%); //adding box shadow effect
 
 		.image-aspect-ratio {
 			&_16-9 {
@@ -182,7 +190,6 @@
 					display: inline-flex;
 					padding: 14px 0;
 					text-align: center;
-					margin-left: 12px;
 
 					upscale-one-tap-buy-button {
 						margin-left: 12px;
@@ -230,6 +237,17 @@
 		}
 		.overlay-content:empty {
 			padding: 0;
+		}
+
+		::ng-deep {
+			upscale-content-slot {
+				cursor: default;
+
+				.configuration {
+					padding: 0;
+					width: 100%;
+				}
+			}
 		}
 
 		::ng-deep {
