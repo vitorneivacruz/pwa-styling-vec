@@ -1061,7 +1061,7 @@
 	:host {
 		.storybook-background {
 			padding: 0px 0;
-			padding-bottom: 50px !important;
+			//padding-bottom: 50px !important; removed to use content slot instead
 		}
 	}
 }
@@ -1071,7 +1071,7 @@
 	:host {
 		.storybook-background {
 			padding: 0px 0;
-			padding-bottom: 50px !important;
+			//padding-bottom: 50px !important; removed to use content slot instead
 		}
 	}
 }
