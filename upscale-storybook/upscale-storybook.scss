@@ -9,6 +9,7 @@
 	max-width: none !important;
 	$dark-font-color: #000000;
 	font-family: 'Poppins';
+	background-color: #FAFAFA !important; //VC change
 
 	.title {
 		@include extra-large-font-size;
