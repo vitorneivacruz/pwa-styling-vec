@@ -154,11 +154,17 @@
 					.original-price,
 					.selling-price {
 						@include small-font-size;
+						font-family: 'Poppins' !important; //VC changes
+					font-size: 16px !important;
+					font-weight: 400 !important;
 					}
 
 					.original-price {
 						text-decoration: line-through;
 						margin-right: 5px;
+						font-family: 'Poppins' !important; //VC changes
+					font-size: 16px !important;
+					font-weight: 400 !important;
 					}
 				}
 
