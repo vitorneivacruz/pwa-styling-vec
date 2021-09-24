@@ -14,7 +14,7 @@
 	&__banner-headline {
 		display: flex;
 		justify-content: space-between;
-		font-weight: 500 !important;
+		font-weight: 600 !important;
 		align-items: center;
 		box-sizing: border-box;
 		width: 100%;
@@ -31,6 +31,8 @@
 	&__body {
 		width: 100%;
 		//padding: 12px;
+		padding-left: 20px !important; //margin left
+		
 		box-sizing: border-box;
 		@include base-font-size;
 	}
@@ -76,12 +78,14 @@ em {
 :host {
 	&.card {
 		border: solid 1px $upscale-grey11;
-		margin-bottom: 10px;
+		
 		//VC changes
 		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15) !important;
 		background-color: white;
 		margin-left: 10px;
 		margin-right: 10px;
+		margin-bottom: 20px; // VC change
+		border-radius: 4px !important; //VC change
 
 		.attribute-details {
 			&__banner-headline {
