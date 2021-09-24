@@ -442,6 +442,7 @@
 			grid-template-columns: 2fr 1fr;
 			flex-direction: column;
 			column-gap: 8%;
+			margin-top: 10px !important;
 		}
 	}
 }
@@ -450,6 +451,7 @@
 	:host {
 		.sections {
 			display: block;
+			margin-top: 0px !important
 		}
 	}
 }
