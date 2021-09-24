@@ -1,5 +1,3 @@
-////Storybook content 
-
 @import '~styles/helpers/_module';
 :host {
 	display: block;
@@ -18,7 +16,6 @@
 	//vc
 	margin-left: 20px;
 	margin-right: 20px;
-
 	.imageDetail {
 		height: 100%;
 	}
@@ -29,14 +26,20 @@
 		position: relative;
 		display: flex;
 		flex-direction: column;
-        //box-shadow: 0px 8px 16px rgb(0 0 0 / 15%);
 		border-radius: 4px !important;
 
 		.image-aspect-ratio {
-			&_16-9 { height: calc(9 / 16 * 100%); }
-			 &_4-3 { height: calc(3 / 4 * 100%); }
-			 &_1-1 { height: 100%; } 
-			box-shadow: 0px 4px 20px rgb(0 0 0 / 15%);
+			&_16-9 {
+				height: calc(9 / 16 * 100%);
+			}
+
+			&_4-3 {
+				height: calc(3 / 4 * 100%);
+			}
+
+			&_1-1 {
+				height: 100%;
+				box-shadow: 0px 4px 20px rgb(0 0 0 / 15%);
 			}
 		}
 
@@ -163,16 +166,16 @@
 					.selling-price {
 						@include small-font-size;
 						font-family: 'Poppins' !important; //VC changes
-					font-size: 16px !important;
-					font-weight: 400 !important;
+						font-size: 16px !important;
+						font-weight: 400 !important;
 					}
 
 					.original-price {
 						text-decoration: line-through;
 						margin-right: 5px;
 						font-family: 'Poppins' !important; //VC changes
-					font-size: 16px !important;
-					font-weight: 400 !important;
+						font-size: 16px !important;
+						font-weight: 400 !important;
 					}
 				}
 
@@ -252,6 +255,7 @@
 		.overlay-content:empty {
 			padding: 0;
 		}
+
 		::ng-deep {
 			upscale-content-slot {
 				cursor: default;
@@ -262,6 +266,7 @@
 				}
 			}
 		}
+
 		::ng-deep {
 			upscale-image {
 				flex: 1;
