@@ -178,10 +178,12 @@ $fixed-button-bar-height: 100px;
 			justify-content: space-evenly;
 			margin: 16px 0 36px;
 			padding: 20px;
+			//change
+			background-color: #FAFAFA !important;
 
 			.column:nth-of-type(2) {
 				flex: 1;
-				max-width: 462px;
+				max-width: 613px; //VC change
 				overflow-y: scroll;
 				height: 600px;
 			}
@@ -383,6 +385,7 @@ $fixed-button-bar-height: 100px;
 	margin: 6px;
 	border: 1px solid transparent;
 	box-sizing: border-box;
+	background-color: white; //VC change
 
 	&:hover {
 		border: solid 1px $upscale-grey11;
@@ -613,6 +616,7 @@ $fixed-button-bar-height: 100px;
 		.product-image {
 			width: 150px;
 			height: 150px;
+			background-color: white; //VC change
 		}
 	}
 

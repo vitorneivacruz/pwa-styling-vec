@@ -14,12 +14,12 @@
 	&__banner-headline {
 		display: flex;
 		justify-content: space-between;
-		font-weight: 600 !important; //negrito
+		font-weight: 500 !important;
 		align-items: center;
 		box-sizing: border-box;
 		width: 100%;
 		line-height: 27px !important;
-        font-size: 18px !important;
+        	font-size: 18px !important;
 		margin: 0 auto;
 		padding: 20px !important;
 		border-bottom: solid 1px $upscale-grey11;
@@ -31,7 +31,6 @@
 	&__body {
 		width: 100%;
 		//padding: 12px;
-		padding-left: 20px !important; //margin left
 		box-sizing: border-box;
 		@include base-font-size;
 	}
@@ -77,9 +76,12 @@ em {
 :host {
 	&.card {
 		border: solid 1px $upscale-grey11;
-		margin-bottom: 20px; // VC change
-		border-radius: 4px !important; //VC change
-		//box-shadow: 0px 4px 10px rgb(0 0 0 / 15%) // VC change*/
+		margin-bottom: 10px;
+		//VC changes
+		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15) !important;
+		background-color: white;
+		margin-left: 10px;
+		margin-right: 10px;
 
 		.attribute-details {
 			&__banner-headline {
@@ -91,5 +93,5 @@ em {
 
 .card[_nghost-serverApp-c162] {
 	background: #FFFFFF;
-	//box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15) !important;
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15) !important;
 }
