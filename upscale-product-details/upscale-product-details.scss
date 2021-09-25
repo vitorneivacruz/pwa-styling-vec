@@ -22,7 +22,7 @@ $fixed-button-bar-height: 100px;
 	::ng-deep {
 		.image.carousel {
 			display: flex;
-			margin-bottom: 30px;
+			margin-bottom: 5px; // vitor change 30px;
 			position: relative;
 
 			ngx-slick {
@@ -667,6 +667,7 @@ $fixed-button-bar-height: 100px;
 	:host.in-edition {
 		&.image-carousel-view {
 			padding: 0;
+			margin-bottom: 5px; //VC
 		}
 	}
 
