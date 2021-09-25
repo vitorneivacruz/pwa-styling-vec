@@ -11,7 +11,7 @@ $fixed-button-bar-height: 100px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background-color: #FAFAFA;
+	background-color: #FAFAFA !important;
 
 	.contentWrapper {
 		&.fixed {
