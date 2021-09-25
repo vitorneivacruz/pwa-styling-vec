@@ -735,6 +735,7 @@ $fixed-button-bar-height: 100px;
 			font-weight: 500 !important;
 			font-size: 24px !important;
 			line-height: 36px !important;
+			padding-top: 0px !important;
 		}
 		.price {
 			font-family: Poppins;
@@ -743,6 +744,8 @@ $fixed-button-bar-height: 100px;
 			font-size: 21px;
 			line-height: 31.5px;
             display: flex !important;
+			padding-top: 0px !important;
+			padding-bottom: 0px !important;
 		}
 		.sku {
 			@include base-font-size;
