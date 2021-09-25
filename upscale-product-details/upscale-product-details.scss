@@ -11,6 +11,7 @@ $fixed-button-bar-height: 100px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	background-color: #FAFAFA;
 
 	.contentWrapper {
 		&.fixed {
@@ -617,7 +618,7 @@ $fixed-button-bar-height: 100px;
 		.product-image {
 			width: 150px;
 			height: 150px;
-			background-color: white; //VC change
+			background-color: white !important; //VC change
 		}
 	}
 
