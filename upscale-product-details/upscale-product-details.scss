@@ -223,7 +223,8 @@ $fixed-button-bar-height: 100px;
 }
 
 .product-detail-content {
-	background-color: $pdp-background;
+	//background-color: $pdp-background;
+	background-color: #FAFAFA !important; //change background mobile colour
 }
 
 .collection-hover {
