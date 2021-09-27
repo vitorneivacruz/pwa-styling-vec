@@ -1,0 +1,34 @@
+.container {
+	height: 0;
+	position: relative;
+	box-shadow: 0 4px 20px rgb(0 0 0 / 15%) !important;
+	&.none {
+		box-shadow: 0 4px 20px rgb(0 0 0 / 15%) !important;
+		height: auto;
+		.content {
+			position: relative;
+			box-shadow: 0 4px 20px rgb(0 0 0 / 15%) !important;
+		}
+	}
+	&.ratio-16-9 {
+		height: calc(9 / 16 * 100vh);
+	}
+	&.ratio-1-1 {
+		height: 100%;
+	}
+	&.ratio-4-3 {
+		height: calc(3 / 4 * 100vh);
+	}
+}
+
+.content {
+	box-shadow: 0 4px 20px rgb(0 0 0 / 15%) !important;
+	display: flex;
+	flex-direction: column;
+	left: 0;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
