@@ -4,6 +4,7 @@
 	position: relative;
 	$dark-font-color: #000000;
 	$light-font-color: #ffffff;
+	box-shadow: 0px 4px 20px rgb(0 0 0 / 15%) !important ; 
 	.disabled-link {
 		display: flex;
 		flex-direction: column;
@@ -29,7 +30,7 @@
 		border-radius: 4px !important;
 
 		.image-aspect-ratio {
-			box-shadow: 0px 4px 20px rgb(0 0 0 / 15%) !important ; 
+			
 			&_16-9 {
 				height: calc(9 / 16 * 100%);
 			}
@@ -40,7 +41,7 @@
 
 			&_1-1 {
 				height: 100%;
-				box-shadow: 0px 4px 20px rgb(0 0 0 / 15%);
+				//box-shadow: 0px 4px 20px rgb(0 0 0 / 15%);
 			}
 		}
 
@@ -50,7 +51,7 @@
 			width: 100%;
 			max-height: 100%;
 			flex: 1;
-			box-shadow: 0px 4px 20px rgb(0 0 0 / 15%);
+			//box-shadow: 0px 4px 20px rgb(0 0 0 / 15%);
 			background-color: #FAFAFA !important;
 
 			&.hide {
