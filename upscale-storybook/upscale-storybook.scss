@@ -98,6 +98,8 @@
 
 			&.four {
 				grid-template-columns: repeat(4, 1fr);
+				margin-left: 20px !important; //VC change
+				margin-right: 20px !important;
 			}
 
 			&.five {
