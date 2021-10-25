@@ -574,6 +574,7 @@ $fixed-button-bar-height: 100px;
 
 .kit-title {
 	padding: 24px;
+	display: none;
 
 	&-name {
 		@include large-font-size;
