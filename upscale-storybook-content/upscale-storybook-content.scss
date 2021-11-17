@@ -30,19 +30,18 @@
 		border-radius: 4px !important;
 
 		.image-aspect-ratio {
+			flex: 1;
 			
-			&_16-9 {
+			/*&_16-9 {
 				height: calc(9 / 16 * 100%);
 			}
-
 			&_4-3 {
 				height: calc(3 / 4 * 100%);
 			}
-
 			&_1-1 {
 				height: 100%;
 				//box-shadow: 0px 4px 20px rgb(0 0 0 / 15%);
-			}
+			}*/
 		}
 
 		.overlay {
