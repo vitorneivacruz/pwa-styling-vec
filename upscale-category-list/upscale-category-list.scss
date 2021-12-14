@@ -92,9 +92,7 @@ mat-icon {
 		
 	}
 }
-
-.upscale-tablet,
-.upscale-desktop {
+@include upscale-multiple(desktop-wmq, tablet-wmq) {
 	:host {
 		.category-list {
 			&.default {
@@ -110,9 +108,12 @@ mat-icon {
 			}
 		}
 	}
+	.category-list {
+		display: none !important;
+	}
 }
 
-.upscale-mobile {
+@include upscale-mobile-wmq() {
 	:host {
 		.category-list {
 			&.default {
@@ -121,9 +122,12 @@ mat-icon {
 				.category {
 					padding: 5px;
 					width: 165px;
-					//background-color: #9C9C9C !important;
 				}
 			}
 		}
+	}
+
+	upscale-scroll-carousel {
+		display: none;
 	}
 }

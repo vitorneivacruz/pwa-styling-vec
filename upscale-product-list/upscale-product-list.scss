@@ -1,3 +1,4 @@
+@import '~styles/helpers/_module';
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 :host {
@@ -67,8 +68,7 @@
 	}
 }
 
-.upscale-large-width,
-.upscale-extra-large-width {
+@include upscale-multiple(large, extra-large) {
 	:host {
 		.product {
 			padding: 6px;
@@ -81,7 +81,7 @@
 	}
 }
 
-.upscale-medium-width {
+@include upscale-medium {
 	:host {
 		.product {
 			padding: 6px;
@@ -94,7 +94,7 @@
 	}
 }
 
-.upscale-small-width {
+@include upscale-small {
 	:host {
 		.products {
 			padding: 2.5%;
@@ -111,7 +111,7 @@
 	}
 }
 
-.upscale-extra-small-width {
+@include upscale-extra-small {
 	:host {
 		.products {
 			padding: 2.5%;

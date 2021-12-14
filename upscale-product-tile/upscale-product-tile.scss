@@ -1,4 +1,15 @@
 @import '~styles/helpers/_module';
+@mixin column {
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+}
+
+@mixin row {
+	display: flex;
+	flex-direction: row;
+	min-width: 0;
+}
 
 :host {
 	upscale-product-image-overlay {
@@ -50,9 +61,9 @@
 		align-self: flex-start;
 	}
 }
-
-:host.mobile-list-view {
-	@extend .row;
+@include upscale-mobile-wmq() {
+	:host.list-layout {
+		@include row();
 
 	.buttons-layout {
 		margin-left: auto;
@@ -75,7 +86,7 @@
 
 	.buttons-layout,
 	.details1 {
-		@extend .row;
+        @include row();
 		flex: none;
 	}
 
@@ -113,9 +124,11 @@
 		background-color: #fafafa !important;
 	}
 }
+}
 
-:host.desktop-list-view {
-	@extend .row;
+@include upscale-multiple(tablet, desktop) {
+	:host.list-layout{
+		@include row();
 
 	.buy-buttons {
 		align-self: baseline !important;
@@ -142,7 +155,7 @@
 
 	.details1,
 	.details2 {
-		@extend .column;
+        @include column();
 		margin-top: 18px;
 	}
 
@@ -189,9 +202,9 @@
 		background-color: #fafafa !important;
 	}
 }
-
+}
 :host {
-	@extend .column; // Only holds true when in grid view.
+        @include column(); // Only holds true when in grid view.
 	background-color: #FAFAFA !important; //white; change color of background tile
 	padding: 0;
 
@@ -322,8 +335,7 @@ a {
 	min-width: 0;
 }
 
-.upscale-medium,
-.upscale-extra-large {
+@include upscale-multiple(medium, extra-large) {
 	:host {
 		&.list-layout {
 			.name {
@@ -342,7 +354,7 @@ a {
 	}
 }
 
-.upscale-large {
+@include upscale-large {
 	:host.list-layout {
 		$size: 211px;
 
@@ -358,7 +370,7 @@ a {
 	}
 }
 
-.upscale-extra-large {
+@include upscale-extra-large {
 	:host.list-layout {
 		.list-layout-spacer {
 			margin-left: 18px;
@@ -381,8 +393,7 @@ a {
 	}
 }
 
-.upscale-extra-small,
-.upscale-small {
+@include upscale-multiple(small, extra-small) {
 	:host.list-layout {
 		.list-layout-spacer {
 			margin-left: 6px;
@@ -397,8 +408,7 @@ a {
 	}
 }
 
-.upscale-medium,
-.upscale-large {
+@include upscale-multiple(medium, large) {
 	:host.list-layout {
 		.list-layout-spacer {
 			margin-left: 16px;
