@@ -26,6 +26,9 @@ $row-height: 54px;
 			}
 		}
 		&__bottom {
+			@include upscale-multiple(mobile, tablet) {
+				display: none;
+			}
 			&-navbar {
 				display: block;
 			}
@@ -44,6 +47,9 @@ $row-height: 54px;
 			height: 42px;
 			padding: 0 12px;
 			margin-right: 6px;
+			@include upscale-desktop() {
+				display: none!important;
+			}
 		}
 		&__shopping-cart-icon {
 			@include clickable;
@@ -54,7 +60,7 @@ $row-height: 54px;
 				display: flex;
 				align-items: center;
 			}
-			&.desktop {
+			@include upscale-desktop {
 				max-height: 40px;
 			}
 			max-height: 26px;
