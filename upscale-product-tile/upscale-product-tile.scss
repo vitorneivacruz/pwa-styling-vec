@@ -208,7 +208,7 @@
         @include column(); // Only holds true when in grid view.
 	background-color: #FAFAFA !important; //white; change color of background tile
 	padding: 0;
-	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15) !important; //test
+	//box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15) !important; //test
 
 	.colors {
 		margin: 12px 0;
@@ -328,7 +328,7 @@ a {
 		min-width: 0;
 		border-radius: 4px !important;
 		//filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.15)); // Vitor adding drop-shadow to carts
-		box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15) !important; //test
+		//box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15) !important; //test
 }
 
 .row {
@@ -434,7 +434,7 @@ a {
 
 .product-tile{
 	cursor: pointer !important;
-	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15) !important; //test
+	//box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15) !important; //test
 }
 
 .product-tile[_ngcontent-serverApp-c273] {
