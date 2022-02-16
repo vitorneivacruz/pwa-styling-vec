@@ -2,7 +2,7 @@
 
 :host {
 	.single-root-category-container {
-		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.07);
+		//box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.07);
 		background-color: rgb(235, 19, 19);
 
 		&:hover {
@@ -89,7 +89,7 @@
 }
 
 .guided-filter {
-	background: #FAFAFA; // #f5f5f5;
+	background: #F1F1F1; // #f5f5f5;
 	box-sizing: border-box;
 	margin-top: -6px;
 	overflow-x: hidden;
@@ -265,7 +265,7 @@
 				min-height: 183px;
 				border-radius: 2px;
 				background-color: white;
-				box-shadow: 0 2px 4px 0 rgb(0 0 0 / 7%);
+				//box-shadow: 0 2px 4px 0 rgb(0 0 0 / 7%);
 				height: 100%;
 			}
 		}
