@@ -329,6 +329,7 @@ $fixed-button-bar-height: 100px;
 			font-style: italic;
 			margin-bottom: 12px;
 			color: $error;
+			
 		}
 	}
 	.actions__buttons {
@@ -617,6 +618,7 @@ $fixed-button-bar-height: 100px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	align-items: flex-end; // VC change
 
 	upscale-volume-pricing::ng-deep {
 		.volume-pricing {
@@ -657,16 +659,8 @@ $fixed-button-bar-height: 100px;
 }
 
 .kit-footer {
-	padding-top: 15px;
-	background-color: $footer-background;
-	display: flex;
-	align-items: top;
-	justify-content: center;
-	margin-top: auto;
-	width: 100%;
-	position: fixed;
-	bottom: 0;
-	z-index: 1;
+	padding-bottom: 30px;
+	padding-top: 30px;
 
 	@media (max-width: 599px) {
 		border: 1px solid #efefef;
@@ -691,16 +685,20 @@ $fixed-button-bar-height: 100px;
 		margin: 0px 20px 0px 20px;
 
 		upscale-shipping-options::ng-deep {
+			
 			mat-radio-group {
 				&.shipping-choices {
+					
 					font-weight: normal;
 					border-top: solid 0px #efefef;
 					border-bottom: solid 0px #efefef;
 					.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
 						border-color: $black;
+						
 					}
 
 					.mat-radio-button.mat-accent .mat-radio-inner-circle {
+						
 						color: $black;
 						background-color: $black;
 					}
@@ -711,6 +709,7 @@ $fixed-button-bar-height: 100px;
 
 	.kit-buttons {
 		text-align: start;
+		//font-family: 'Poppins' !important;
 
 		.buttons {
 			width: 100%;
@@ -721,11 +720,13 @@ $fixed-button-bar-height: 100px;
 				gap: 10px;
 				.shipping-icon {
 					padding: 5px;
+					//visibility: hidden; // VC Change
 				}
 			}
 
 			.add-to-cart[disabled] {
 				width: 100%;
+				
 			}
 
 			upscale-one-tap-buy-button {
@@ -735,6 +736,7 @@ $fixed-button-bar-height: 100px;
 						border: none !important;
 						background-color: $upscale-grey10 !important;
 						cursor: default !important;
+						
 					}
 				}
 			}
@@ -758,6 +760,7 @@ $fixed-button-bar-height: 100px;
 	position: fixed;
 	bottom: 0;
 	z-index: 1;
+	
 }
 
 .buy-kit {
@@ -768,6 +771,8 @@ $fixed-button-bar-height: 100px;
 	position: fixed;
 	bottom: 0;
 	left: 0;
+	background-color: rgb(177, 85, 51); //VC change
+	font-family: 'Poppins';
 }
 
 .close-button {
@@ -820,8 +825,6 @@ $fixed-button-bar-height: 100px;
 }
 
 .kit-summary-headline {
-	@include large-font-size;
-	padding: 24px;
 	display: flex;
 	justify-content: center;
 	font-stretch: normal;
@@ -829,80 +832,49 @@ $fixed-button-bar-height: 100px;
 	color: #B15533; //$black; VC Change
 	font-weight: 500 !important;
 	margin-top: 30px; //VC change
+	text-align: center;
 }
 
-.kit-title {
-	&-price {
-		@include base-font-size;
-		padding: 24px;
-		font-stretch: normal;
-		letter-spacing: normal;
-		color: $black;
-	}
-}
 
 .kit-banner {
     height: 100%; //80%; VC change
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-	background-color: rgba(255, 255, 255, 0.7);
-    width: 50%; // VC change
-
+    
         &-media {
-		background-repeat: no-repeat;
-		background-size: cover;
 		background-color: rgba(255,255,255,.8); // rgba(255, 255, 255);
-		height: 200px;
-		width: 100%;
-		display: flex;
-        justify-content: flex-end;
-		text-align: center;
-		flex-direction: column;	
 		align-items: center; // VC change	
+		background-position: center;
 	}
 
 	&-title {
-		display: flex;
-		width: 100%;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
+		
 
 		&-name {
-			@include large-font-size;
-			display: flex;
-			justify-content: center;
-			font-stretch: normal;
-			font-style: normal;
 			color: #B15533; //$black; VC change
 			font-weight: 500 !important;
+			margin-top: 10px;
 
 			&-dialog {
-				font-weight: 500;
-				text-decoration: underline;
+				
 				visibility: hidden; // VC change
 			}
 		}
 
 		&-description {
-            max-height: 3.6em;
-			display: -webkit-box;
+           
 			-webkit-line-clamp: 2;
-			-webkit-box-orient: vertical;
-			overflow: hidden;
-			text-overflow: ellipsis;
-			padding: 0px 16px;
-			max-width: 644px;
+			margin-top: 5px;
+			
 		}
 
 		&-price {
-			@include base-font-size;
-			font-stretch: normal;
-			letter-spacing: normal;
-			color: $black;
             padding-bottom: 20px; //VC change
-			font-size: 21px !important; // VC Changege
+			font-size: 21px !important; // VC Change
+			@media (max-width: 599px) { 
+				font-size: 18px !important;
+				
+			}
+		
+
 		}
 	}
 }
@@ -914,7 +886,7 @@ $fixed-button-bar-height: 100px;
 		}
 		.kit-banner-title-description {
 			padding-top: 10px;
-			-webkit-line-clamp: 1;
+			-webkit-line-clamp: 2;
 		}
 	}
 }

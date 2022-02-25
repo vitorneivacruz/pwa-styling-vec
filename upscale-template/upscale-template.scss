@@ -1,24 +1,4 @@
 .landscape-grid {
 	background-color: #f1f1f1 !important ; //VC
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	height: 100%;
-	::ng-deep.row-item {
-		flex-basis: 100%;
-	}
-	& > ::ng-deep:first-child,
-	& > ::ng-deep:nth-child(2) {
-		flex-grow: unset;
-		flex-basis: 50%;
-		height: 100%;
-		min-height: 0;
-		overflow-y: auto;
-	}
-}
-.landscape-grid.entire-scroll {
-	& > :first-child,
-	& > :nth-child(2) {
-		height: auto;
-	}
+	
 }
