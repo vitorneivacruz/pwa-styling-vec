@@ -1,7 +1,7 @@
-@import '~styles/helpers/_module';
+//@import '~styles/helpers/_module';
 
 :host {
-	display: grid;
+	/*display: grid;
 	grid-auto-rows: min-content;
 	row-gap: 20px;
 
@@ -136,7 +136,7 @@
 				color: $upscale-grey4;
 			}
 		}
-	}
+	}*/
 
 	.summary-info {
 		background-color: #ffffff;
@@ -162,7 +162,7 @@
 		}
 	}
 
-	.coupon {
+	/*.coupon {
 		background-color: #ffffff;
 		margin-bottom: 6px;
 
@@ -335,7 +335,7 @@
 			width: 100%;
 			border-radius: 0;
 		}
-	}
+	}*/
 
 	upscale-attribute-set {
 		width: 100%;
@@ -359,7 +359,7 @@
 		padding-top: 10px !important;
 	}	   
 }
-
+/*
 .upscale-extra-small,
 .upscale-small {
 	:host {
@@ -394,4 +394,4 @@
 			}
 		}
 	}
-}
+}*/

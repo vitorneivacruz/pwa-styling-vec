@@ -1,17 +1,15 @@
 :host {
+	.disabled-link {
+		text-decoration: none;
+	}
 	
 	.storybook-content {
 		border-radius: 4px !important;
 
-		
-
 		.overlay {
 			
 			background-color: #FAFAFA !important;
-
-			
-
-			
+	
 
 		
 
@@ -108,3 +106,4 @@
 		}
 	}
 }
+

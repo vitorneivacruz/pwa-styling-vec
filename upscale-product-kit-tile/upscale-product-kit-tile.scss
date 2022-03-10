@@ -12,6 +12,20 @@
             
 			
 		}
+		.buy-buttons {
+			border-radius: 4px;
+			border-color: rgb(177, 85, 51);
+			background-color: #B15533 !important;
+
+			.selected-update-swap-item,
+			.selected-swap-item {
+				color: white;	
+				line-height: 26px;
+				background-color: transparent;
+			}		}
+
+
+		}
 
 	}
-}
+

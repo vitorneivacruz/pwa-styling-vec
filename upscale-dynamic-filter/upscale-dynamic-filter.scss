@@ -1,4 +1,4 @@
-@import '~styles/helpers/_mixins';
+/*@import '~styles/helpers/_mixins';
 
 :host upscale-ui-carousel::ng-deep {
 	.slick-next,
@@ -239,7 +239,7 @@
 		display: none;
 	}
 }
-
+*/
 :host.upscale-small,
 :host.upscale-extra-small,
 :host.upscale-medium {
@@ -326,7 +326,7 @@
 		position: relative;
 	}
 }
-
+/*
 :host.upscale-large {
 	.stacked.image-icon {
 		.icon {
@@ -359,3 +359,4 @@
 		}
 	}
 }
+*/

@@ -2,22 +2,7 @@
 
 :host {
 	.formgroup-input-container.show-as-modal {
-		margin-bottom: 0;
-
-		.shipping-wrapper {
-			padding: 0;
-
-			input[type='text'],
-			select {
-				padding-right: 0;
-			}
-
-			input[type='text'],
-			select,
-			.select-input {
-				border-top-width: 1px;
-			}
-		}
+		
 
 		::ng-deep .formgroup__button {
 			border-radius: 0;
@@ -29,63 +14,7 @@
 }
 
 .formgroup-input-container {
-	margin-bottom: 77px;
-	&.collapsed {
-		margin-bottom: 10px;
-	}
-	&.complete {
-		margin-bottom: 20px;
-	}
-
-	.shipping-address-list {
-		background-color: $white;
-		border-top: 1px solid $upscale-grey11;
-		border-bottom: 1px solid $upscale-grey11;
-
-		display: flex;
-		flex-direction: column;
-
-		.selected-ship-address {
-			border-bottom: 1px solid $upscale-grey11;
-			padding: 14px;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-
-			.address {
-				display: flex;
-				flex-direction: column;
-			}
-
-			.actions {
-				display: flex;
-				flex-direction: row;
-				justify-content: space-evenly;
-				align-items: center;
-				gap: 12px;
-
-				.chevron::before {
-					border-style: solid;
-					border-width: 2px 2px 0 0;
-					content: '';
-					display: inline-block;
-					height: 7px;
-					left: 5px;
-					position: relative;
-					top: -3px;
-					transform: rotate(135deg);
-					width: 7px;
-					border-color: $upscale-grey2;
-				}
-			}
-		}
-
-		.new-address {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			padding: 14px;
-		}
+    .shipping-address-list {
 
 		.action-button {
 			padding: 8px 20px 8px 21px;
@@ -159,21 +88,9 @@
 				border-bottom: solid 2px $error;
 			}
 		}
-
-		.optional-label {
-			position: absolute;
-			right: 0;
-			border-top: 2px solid $upscale-grey11;
-			border-right: 2px solid $upscale-grey11;
-			margin-top: 0;
-		}
 	}
 
-	.save-address-container {
-		padding: 14px;
-		background-color: $white;
-		border-top: 1px solid $upscale-grey11;
-	}
+	
 
 	::ng-deep {
 		.formgroup__button {
@@ -184,6 +101,8 @@
 		}
 	}
 }
+
+
 
 input[type='text'],
 select {
@@ -213,96 +132,7 @@ select {
 	}
 }
 
-.input-row {
-	display: flex;
-}
-
-.same-as-shipping {
-	position: absolute;
-	top: 0;
-	right: 0;
-	height: 45px;
-	display: flex;
-	align-items: center;
-	padding: 0 15px;
-	@include small-font-size;
-	font-weight: 400;
-	color: $black;
-
-	input {
-		margin-right: 8px;
-	}
-
-	@media (max-width: 600px) {
-		position: relative;
-		padding-left: 12px;
-		background-color: $white;
-	}
-}
-
-.saved-data {
-	line-height: 1.33;
-	text-align: left;
-	color: black;
-	border-top: 1px solid $upscale-grey11;
-	padding: 14px;
-	background-color: white;
-}
-
-.text-input {
-	width: 100%;
-	position: relative;
-	display: flex;
-
-	&.optional {
-		input {
-			padding-right: 5.5px;
-		}
-	}
-
-	.optional-label {
-		background-color: white;
-		margin-top: 1px;
-		display: block;
-		align-items: center;
-		padding-right: 11px;
-		padding-left: 5.5px;
-		@include small-font-size;
-		font-weight: bold;
-		text-align: right;
-		color: $upscale-grey6;
-		box-sizing: border-box;
-		max-width: 50%;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		height: 45px;
-		line-height: 45px;
-		white-space: nowrap;
-	}
-}
 
 .select-input {
 	width: 100%;
-	position: relative;
-
-	select {
-		appearance: none;
-		padding-right: 33px;
-	}
-
-	&::after {
-		pointer-events: none;
-		content: '';
-		display: block;
-		width: 0;
-		height: 0;
-		border: 5px solid transparent;
-		border-left-color: $base-font-color;
-		border-bottom-color: $base-font-color;
-		position: absolute;
-		right: 17px;
-		top: 50%;
-		transform: rotate(-45deg);
-		margin-top: -8px;
-	}
 }

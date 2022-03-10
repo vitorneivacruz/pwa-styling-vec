@@ -1,167 +1,18 @@
 @import '~styles/helpers/_module';
 
 :host {
-	h3 {
-		@include medium-font-size;
-		font-weight: 500;
-		letter-spacing: normal;
-		color: $black;
-		padding-left: 24px;
-	}
-
+	
 	.swap-container {
 		display: flex;
 		justify-content: center;
 		min-height: 500px;
 		margin-bottom: 10px;
 
-		&.mobile {
-			min-height: 100%;
-		}
+		
 
 		&-items {
 			display: none;
-			flex: 1;
-			border-radius: 2px;
-			overflow: hidden;
-			position: relative;
-			padding-left: 24px;
-			padding-right: 24px;
-
-			.selected-item {
-				position: absolute;
-				top: 20px;
-				left: 24px;
-				z-index: 999;
-				border-radius: 2px;
-				border: solid 4px $upscale-selected-blue-border;
-				width: 245px;
-				background-color: $white;
-
-				@media (min-width: 600px) and (max-width: 800px) {
-					width: 200px;
-				}
-
-				::ng-deep upscale-ui-carousel {
-					$arrow-position: 17px;
-
-					ngx-slick {
-						width: 100%;
-						overflow-x: unset;
-
-						::ng-deep upscale-product-collection-tile {
-							::ng-deep .slick-track {
-								margin-top: 0;
-							}
-						}
-
-						::ng-deep .image.carousel {
-							button.slick-arrow {
-								margin-top: -11px;
-							}
-							.slick-dots {
-								bottom: 0;
-							}
-						}
-						::ng-deep .slick-dots {
-							display: block;
-							bottom: 0;
-
-							li {
-								@media (max-width: 600px) {
-									width: 10px;
-									height: 10px;
-								}
-
-								&.slick-active {
-									button::before {
-										color: $upscale-grey4;
-									}
-								}
-
-								button::before {
-									color: $upscale-grey7;
-									@include font-size(10);
-									opacity: 1;
-								}
-							}
-						}
-					}
-
-					.slick-list,
-					.slick-track {
-						height: 100%;
-					}
-
-					.slick-track {
-						display: flex;
-					}
-
-					.slick-arrow {
-						$icon-size: 20px;
-						display: none;
-						height: $icon-size;
-						width: $icon-size;
-						// Have to use z-index because image and arrows are all in one component.
-						z-index: 2;
-						@include clickable;
-						top: 100%;
-						margin-top: -11px;
-						&:hover {
-							background-color: rgba(255, 255, 255, 0.14);
-						}
-						&:before {
-							color: #000;
-							font-family: 'Material Icons';
-							font-size: $icon-size;
-						}
-					}
-
-					.slick-next {
-						right: $arrow-position;
-					}
-
-					.slick-next:before {
-						content: 'keyboard_arrow_right';
-					}
-
-					.slick-prev {
-						left: $arrow-position;
-					}
-
-					.slick-prev:before {
-						content: 'keyboard_arrow_left';
-					}
-					.slick-dotted.slick-slider {
-						margin-bottom: 10px;
-					}
-					.slick-arrow {
-						display: block !important;
-
-						@media (max-width: 600px) {
-							display: none !important;
-						}
-					}
-				}
-			}
-
-			&-mobile {
-				width: 100%;
-				padding-bottom: 18px;
-				border-bottom: 2px solid $upscale-grey11;
-			}
-
-			upscale-swappable-pages {
-				display: flex;
-				position: relative;
-				width: 100%;
-			}
-
-			upscale-ui-carousel {
-				display: flex;
-				position: relative;
-				width: 100%;
-			}
+	
 		}
 	}
 }

@@ -1,6 +1,6 @@
-@import '~styles/helpers/_module';
+//@import '~styles/helpers/_module';
 @import url('https://fonts.googleapis.com/css?family=Poppins');
-
+/*
 :host {
 	display: flex;
 	flex-direction: column;
@@ -153,10 +153,10 @@ upscale-shipping-tag {
 .margin {
 	margin-top: 20px;
 	margin-bottom: 20px;
-}
+}*/
 
 .details-section {
-	display: flex;
+	/*display: flex;
 	align-items: center;
 	flex-direction: column;
 	margin-bottom: 24px;
@@ -285,7 +285,7 @@ upscale-shipping-tag {
 				background-color: $white;
 			}
 		}
-	}
+	}*/
 	.shopping-button {
 		@include button($background-color: #B15533);
 		width: 100%;
@@ -294,7 +294,7 @@ upscale-shipping-tag {
 		font-family: 'Poppins' !important;
 	}
 }
-
+/*
 em {
 	border: solid black;
 	border-width: 0 2px 2px 0;
@@ -347,4 +347,4 @@ em {
 	.configuration {
 		padding-bottom: $medium-spacer-desktop;
 	}
-}
+}*/

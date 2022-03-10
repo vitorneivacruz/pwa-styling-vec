@@ -1,4 +1,4 @@
-@import '~styles/helpers/_module';
+/*@import '~styles/helpers/_module';
 
 :host {
 	width: 100%;
@@ -18,7 +18,7 @@
 			width: 100%;
 		}
 	}
-}
+}*/
 
 :host upscale-ui-carousel::ng-deep {
 	.slick-next,
@@ -62,7 +62,7 @@
 		display: flex;
 	}
 }
-
+/*
 mat-icon {
 	position: absolute;
 	color: black;
@@ -71,7 +71,7 @@ mat-icon {
 	top: 50%;
 	@include font-size(40);
 	padding-left: 6px;
-}
+}*/
 
 .carousel-container {
 	box-sizing: border-box;
@@ -92,6 +92,7 @@ mat-icon {
 		
 	}
 }
+/*
 @include upscale-multiple(desktop-wmq, tablet-wmq) {
 	:host {
 		.category-list {
@@ -130,4 +131,4 @@ mat-icon {
 	upscale-scroll-carousel {
 		display: none;
 	}
-}
+}*/

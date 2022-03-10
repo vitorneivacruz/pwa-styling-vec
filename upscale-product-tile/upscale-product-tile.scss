@@ -1,40 +1,17 @@
 @import '~styles/helpers/_module';
 @mixin column {
-	display: flex;
-	flex-direction: column;
-	min-width: 0;
+
 	border-radius: 4px !important;
 }
 
-@mixin row {
-	display: flex;
-	flex-direction: row;
-	min-width: 0;
-}
 
-:host {
-	upscale-product-image-overlay {
-		height: 100%;
-		left: 0;
-		position: absolute;
-		top: 0;
-		width: 100%;
-	}
-}
 
-:host:not(.list-layout) {
-	// The image should always be a square and the edge of the square has a length equal to the width of the tile.
-	.image {
-		padding-top: 100%;
-		width: 100%;
-	}
-}
+
+
+
 
 :host.list-layout {
-	box-sizing: border-box;
-	padding-bottom: 0;
-	padding-right: 12px;
-	width: 100%;
+	
 
 	.colors,
 	.name,
@@ -45,7 +22,7 @@
 	}
 
 	.name {
-		@include multiline-truncate-text-with-ellipsis(1.6rem, 1.5, 3);
+		
 		font-style: normal;
 		font-weight: 600 !important;
 		font-size: 18px !important;
@@ -54,22 +31,13 @@
 		background-color: #FAFAFA !important;
 	}
 
-	.colors {
-		display: inline-block;
-	}
-
-	.image {
-		align-self: flex-start;
-	}
+	
 }
 @include upscale-mobile-wmq() {
 	:host.list-layout {
 		@include row();
 
-	.buttons-layout {
-		margin-left: auto;
-		margin-top: auto;
-	}
+	
 
 	.buy-buttons {
 		align-self: baseline !important;
@@ -78,32 +46,15 @@
         background-color: transparent !important;
 		margin-left: 12px;
 
-		.one-tap-buy {
-			$height: 40px;
-
-			height: $height;
-		}
+		
 	}
 
-	.buttons-layout,
-	.details1 {
-        @include row();
-		flex: none;
-	}
+	
 
-	.column {
-		flex: 1;
-        border-radius: 4px !important;
-	}
+	
 
-	.details1 {
-		justify-content: space-between;
-		margin-top: 12px;
-	}
-
-	.details2 {
-		display: inline-block;
-	}
+	
+	
 
 	.name {
 		@include medium-font-size;
@@ -154,21 +105,7 @@
 		background-color: #FAFAFA !important;
 	}
 
-	.details1,
-	.details2 {
-        @include column();
-		margin-top: 18px;
-	}
-
-	.details1 {
-		align-items: flex-start;
-		padding-right: 12px;
-	}
-
-	.details2,
-	.image {
-		flex: none;
-	}
+	
 
 	.details2 {
 		align-items: flex-end;
@@ -182,10 +119,7 @@
 		}
 	}
 
-	.image {
-		height: 100%;
-		padding: 0;
-	}
+	
 
 	.name {
 		@include medium-font-size;
@@ -210,45 +144,11 @@
 	padding: 0;
 	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0) !important; //test
 
-	.colors {
-		margin: 12px 0;
+	
 
-		&.empty {
-			margin: auto 0;
-		}
+	
 
-		> span {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			width: 20px;
-			height: 20px;
-			margin: 0 2px 5px 3px;
-
-			&.more {
-				width: auto;
-				min-width: 20px;
-				@include small-font-size;
-				font-weight: 500;
-				white-space: nowrap;
-			}
-		}
-	}
-
-	.colors,
-	.name,
-	.price {
-		display: flex;
-		padding: 0 12px;
-		.original-price {
-			text-decoration: line-through;
-			padding-right: $small-spacer-tablet;
-		}
-	}
-
-	.price-range {
-		display: flex;
-	}
+	
 
 	.image {
 		box-sizing: border-box;
@@ -263,37 +163,9 @@
 		}
 	}
 
-	.name {
-		@include multiline-truncate-text-with-ellipsis(1.6rem, 1.5, 3);
-		color: black;
-		font-weight: 500;
-		margin-top: 6px;
-	}
+	
 
-	.price {
-		color: black;
-		@include base-font-size;
-	}
-
-	.actions {
-		color: white;
-		padding-top: 3px;
-		width: 100%;
-		display: flex;
-		justify-content: center;
-
-		.apple {
-			width: 130px;
-			max-width: 100%;
-			height: 30px;
-			border-radius: 2px;
-			background-color: #1a1919;
-			line-height: 30px;
-			@include font-size(14);
-			font-family: sans-serif;
-			font-weight: lighter;
-		}
-	}
+	
 
 	.buy-buttons {
 		display: inline-flex;
@@ -312,15 +184,7 @@
 	}
 }
 
-a:visited {
-	color: inherit;
-}
 
-a {
-	cursor: inherit;
-	text-decoration: none !important;
-	color: inherit;
-}
 
 .column {
 		display: flex;
@@ -340,91 +204,19 @@ a {
 
 @include upscale-multiple(medium, extra-large) {
 	:host {
-		&.list-layout {
-			.name {
-				@include multiline-truncate-text-with-ellipsis(1.6rem, 1.5, 3);
-			}
-		}
+		
 
 		.name {
 			@include multiline-truncate-text-with-ellipsis(1.8rem, 1.5, 3);
 			height: 51px;
 		}
 
-		.price {
-			@include base-font-size;
-		}
+		
 	}
 }
 
-@include upscale-large {
-	:host.list-layout {
-		$size: 211px;
 
-		min-height: $size;
 
-		.name {
-			@include multiline-truncate-text-with-ellipsis(2.5rem, 1.5, 3);
-		}
-
-		.price {
-			@include font-size(25);
-		}
-	}
-}
-
-@include upscale-extra-large {
-	:host.list-layout {
-		.list-layout-spacer {
-			margin-left: 18px;
-		}
-
-		.image {
-			$size: 248px;
-
-			min-height: $size;
-			width: $size;
-		}
-
-		.name {
-			@include multiline-truncate-text-with-ellipsis(2.8rem, 1.5, 3);
-		}
-
-		.price {
-			@include font-size(28);
-		}
-	}
-}
-
-@include upscale-multiple(small, extra-small) {
-	:host.list-layout {
-		.list-layout-spacer {
-			margin-left: 6px;
-		}
-
-		.image {
-			$size: 145px;
-
-			min-height: $size;
-			width: $size;
-		}
-	}
-}
-
-@include upscale-multiple(medium, large) {
-	:host.list-layout {
-		.list-layout-spacer {
-			margin-left: 16px;
-		}
-
-		.image {
-			$size: 211px;
-
-			min-height: $size;
-			width: $size;
-		}
-	}
-}
 
 .promotion-badges {
 	&.bottom-badges {
