@@ -5,10 +5,22 @@
 
 	&.text-button {
 		border-radius: 4px;
+		background-color: black;
 		//font-family: 'Poppins' !important;
 	}
 
 	&.icon-button {
 		border-radius: 4px;
+		visibility: hidden !important;
+        max-width: 170px !important;
 		}
+	&.icon-button:after {
+			content: 'Adicionar' !important;
+			 padding: 15px 80px !important;
+			visibility: visible;
+			display: block;
+			position: absolute;
+			background-color: rgb(177, 85, 51);
+		  color: #fff !important;
+		  }
 }

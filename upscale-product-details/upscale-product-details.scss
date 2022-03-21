@@ -1,6 +1,5 @@
 @import '~styles/helpers/_module';
 /*@import url('https://fonts.googleapis.com/css?family=Poppins');
-
 $pdp-background: #ffffff;
 $footer-background: #ffffff;
 $fixed-button-bar-height: 100px;*/
@@ -73,7 +72,7 @@ $fixed-button-bar-height: 100px;*/
 			margin: 16px 0 36px;
 			padding: 20px;
 			//change
-			background-color: #FAFAFA !important;
+			//background-color: #FAFAFA !important;
 
 			.column:nth-of-type(2) {
 				flex: 1;
@@ -91,7 +90,7 @@ $fixed-button-bar-height: 100px;*/
 
 .product-detail-content {
 	//background-color: $pdp-background;
-	background-color: #FAFAFA !important; //change background mobile colour
+	background-color: #F1F1F1 !important; //change background mobile colour
 }
 
 .collection-hover {
@@ -246,7 +245,6 @@ $fixed-button-bar-height: 100px;*/
 				
 			}
 		
-
 		}*/
 	}
 }

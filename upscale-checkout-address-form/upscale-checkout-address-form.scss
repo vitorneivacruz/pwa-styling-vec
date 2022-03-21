@@ -17,14 +17,8 @@
     .shipping-address-list {
 
 		.action-button {
-			padding: 8px 20px 8px 21px;
-			border-radius: 2px;
-			border: solid 2px $upscale-grey11;
-			background-color: $white;
-			@include base-font-size;
-			font-weight: 500;
-			line-height: 1.5;
-			letter-spacing: normal;
+			
+			border-radius: 4px;
 			color: #B15533 !important;
 			font-family: 'Poppins' !important;
 			cursor: pointer;
@@ -33,7 +27,17 @@
 				background-color: rgba(0, 0, 0, 0.1);
 			}
 		}
+
+        .action--button-black {
+			border-radius: 4px;
+			border: none;
+			color: white !important;
+			background-color: #B15533;
+			font-family: 'Poppins' !important;
+
+		}
 	}
+
 
 	.shipping-wrapper {
 		padding: 12px;
